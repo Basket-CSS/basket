@@ -32,7 +32,7 @@ $dark: #333
 
 $variations: "blue", "green", "indigo", "orange", "pink", "purple", "red", "teal", "yellow", "dark"
 
-\:root
+\:root, [data-theme="light"]
   --bg-color: #{$bg-light}
   --text-color: #{$text-light}
   --blue: #{$blue-light}
@@ -55,6 +55,7 @@ $variations: "blue", "green", "indigo", "orange", "pink", "purple", "red", "teal
   --yellow-hover: #{darken($yellow-light, $hover-percent)}
   --dark: #{$dark}
   --dark-hover: #{darken($dark, $hover-percent)}
+  --lightness-hsl: 90%
   
   
 [data-theme="dark"]
@@ -80,6 +81,7 @@ $variations: "blue", "green", "indigo", "orange", "pink", "purple", "red", "teal
   --yellow-hover: #{lighten($yellow-dark, $hover-percent-dark)}
   --dark: #{$dark}
   --dark-hover: #{lighten($dark, $hover-percent-dark)}
+  --lightness-hsl: 20%
 
 
 // Grid System

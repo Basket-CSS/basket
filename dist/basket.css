@@ -7,7 +7,7 @@
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap");
-:root {
+:root, [data-theme="light"] {
   --bg-color: #FAFAFA;
   --text-color: #000;
   --blue: #007AFF;
@@ -30,6 +30,7 @@
   --yellow-hover: #e6b800;
   --dark: #333;
   --dark-hover: #262626;
+  --lightness-hsl: 90%;
 }
 
 [data-theme="dark"] {
@@ -55,6 +56,7 @@
   --yellow-hover: #ffda24;
   --dark: #333;
   --dark-hover: #404040;
+  --lightness-hsl: 20%;
 }
 
 /* Full sized container using full width of the viewport */
@@ -788,6 +790,58 @@ hr {
 .drop:hover .drop-list {
   margin-top: 0%;
   opacity: 1;
+}
+
+.blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 1.5rem;
+  background: hsl(0, 0%, var(--lightness-hsl));
+  color: var(--text-color);
+}
+
+.blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+.blockquote-blue {
+  border-left: 0.3rem solid var(--blue);
+}
+
+.blockquote-green {
+  border-left: 0.3rem solid var(--green);
+}
+
+.blockquote-indigo {
+  border-left: 0.3rem solid var(--indigo);
+}
+
+.blockquote-orange {
+  border-left: 0.3rem solid var(--orange);
+}
+
+.blockquote-pink {
+  border-left: 0.3rem solid var(--pink);
+}
+
+.blockquote-purple {
+  border-left: 0.3rem solid var(--purple);
+}
+
+.blockquote-red {
+  border-left: 0.3rem solid var(--red);
+}
+
+.blockquote-teal {
+  border-left: 0.3rem solid var(--teal);
+}
+
+.blockquote-yellow {
+  border-left: 0.3rem solid var(--yellow);
+}
+
+.blockquote-dark {
+  border-left: 0.3rem solid var(--dark);
 }
 
 .card {

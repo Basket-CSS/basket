@@ -1,0 +1,14 @@
+.blockquote
+  margin-left: 0
+  margin-right: 0
+  padding: 1rem 1.5rem
+  background: hsl(0, 0%, var(--lightness-hsl))
+  color: var(--text-color)
+
+  *:last-child
+    margin-bottom: 0
+
+@each $variation in $variations
+	.blockquote-#{$variation}
+		border-left: 0.3rem solid var(--#{$variation})
+  
