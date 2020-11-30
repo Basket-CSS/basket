@@ -1,0 +1,58 @@
+.modal
+  position: fixed
+  background-color: rgba(200, 200, 200, 0.75)
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1502
+  opacity: 0
+  pointer-events: none
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  transition: all 0.3s
+
+  &:target
+    opacity: 1
+    pointer-events: auto
+
+  .modal-inner
+    position: relative
+    width: 60vw
+    min-height: 20%
+    max-height: calc(100vh - 30vh)
+    background: var(--bg-color)
+    color: var(--text-color)
+    top: 20vh
+    margin: auto
+
+  .modal-header
+    font-size: 1.2em
+    font-weight: 100
+    border-bottom: 0.5px solid var(--active-color)
+    display: block
+    width: 100%
+    padding: 0.5em 0
+
+  .modal-body
+    padding: 0.5em
+
+  .modal-close
+    color: #aaa
+    line-height: 50px
+    font-size: 2em
+    position: absolute
+    right: 0
+    text-align: center
+    top: 0
+    width: 70px
+    text-decoration: none
+
+    &:hover
+      color: var(--hover-color)
+
+
+@media only screen and (max-width: 601px)
+  .modal .modal-inner
+    width: 100vw
+

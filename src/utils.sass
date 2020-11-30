@@ -1,0 +1,65 @@
+/* Responsive images */
+
+.img-responsive
+  overflow: hidden
+
+  img
+    width: 100%
+
+/* Profile image */
+
+.img-rounded
+  border-radius: 50%
+
+/* CSS for profile */
+
+.profile
+  transition: 0.4s ease-in-out
+  display: block
+
+  &:hover
+    -webkit-box-shadow: 5px 15px 50px -25px var(--hover-color)
+    -moz-box-shadow: 5px 15px 50px -25px var(--hover-color)
+    box-shadow: 5px 15px 50px -25px var(--hover-color)
+
+  img
+    width: 55%
+
+  a
+    width: 100%
+    text-decoration: none
+
+.contact-option
+  justify-items: center
+  align-items: center
+  display: inline-flex
+  margin: 2%
+  min-width: 15%
+
+  img
+    margin: auto 4% auto auto
+    filter: var(--icon-invert)
+
+  text-decoration: none
+
+  &:hover
+    font-weight: bold
+
+/* Custom HR */
+
+hr
+  margin-top: 1rem
+  margin-bottom: 1rem
+  border: 0
+  border-top: 1px solid grey
+
+/* Custom padding classes */
+
+.padding-1
+  padding: 0 1em
+
+.padding-2
+  padding: 0 2em
+
+.padding-3
+  padding: 0 3em

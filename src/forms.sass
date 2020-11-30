@@ -1,0 +1,133 @@
+form
+  width: 100%
+
+input
+  &[type=email], &[type=file], &[type=number], &[type=password], &[type=search], &[type=tel], &[type=text], &[type=url]
+    width: 100%
+    margin-top: 1rem
+    margin-bottom: 1rem
+    box-sizing: border-box
+    transition: all .2s ease
+    border: 1px solid #141b24
+    border-radius: 2px
+
+select
+  width: 100%
+  margin-top: 1rem
+  margin-bottom: 1rem
+  box-sizing: border-box
+  transition: all .2s ease
+  border: 1px solid #141b24
+  border-radius: 2px
+
+textarea
+  width: 100%
+  margin-top: 1rem
+  margin-bottom: 1rem
+  box-sizing: border-box
+  transition: all .2s ease
+  border: 1px solid #141b24
+  border-radius: 2px
+
+  &[type=text]
+    width: 100%
+    margin-top: 1rem
+    margin-bottom: 1rem
+    box-sizing: border-box
+    transition: all .2s ease
+    border: 1px solid #141b24
+    border-radius: 2px
+
+input
+  &[type=email]:focus, &[type=file]:focus, &[type=number]:focus, &[type=password]:focus, &[type=search]:focus, &[type=tel]:focus, &[type=text]:focus, &[type=url]:focus
+    border-color: #141b24
+    transition: all 0.2s ease
+
+select:focus
+  border-color: #141b24
+  transition: all 0.2s ease
+
+textarea
+  &:focus, &[type=text]:focus
+    border-color: #141b24
+    transition: all 0.2s ease
+
+input
+  &[type=checkbox], &[type=radio]
+    border: 0.5px solid black !important
+
+  padding: 0.9rem 1rem 0.9rem 2rem
+
+textarea
+  padding: 0.9rem 1rem 0.9rem 2rem
+
+select
+  background: #fff
+  padding: .9rem .5rem
+  margin: 1.2rem 0
+
+textarea
+  resize: vertical
+  min-height: 12rem
+  margin: 0
+
+.input-field span:before
+  cursor: pointer
+  position: relative
+  font-family: fontawesome
+  top: 3rem
+  left: .6rem
+  color: #212121
+
+.text-area-field span:before
+  top: 1.8rem
+
+label
+  cursor: pointer
+
+  input
+    &[type=checkbox]
+      display: none
+
+      + span:before
+        color: hsla(0, 0%, 100%, 0)
+        content: ""
+        font-family: fontawesome
+        border: 1px solid #212121
+        padding: .4rem
+        border-radius: 2px
+        transition: .2s
+        font-size: 16px
+
+      &:checked + span:before
+        content: ""
+        font-family: fontawesome
+        border: 1px solid #212121
+        padding: .4rem
+        border-radius: 2px
+        transition: .2s
+        font-size: 16px
+        color: #212121
+
+    &[type=radio]
+      display: none
+
+      + span:before
+        color: hsla(0, 0%, 100%, 0)
+        content: ""
+        font-family: fontawesome
+        border: 1px solid #212121
+        padding: .3rem .4rem
+        border-radius: 100%
+        transition: .2s
+        font-size: 14px
+
+      &:checked + span:before
+        content: ""
+        font-family: fontawesome
+        border: 1px solid #212121
+        padding: .3rem .4rem
+        border-radius: 100%
+        transition: .2s
+        font-size: 14px
+        color: #212121

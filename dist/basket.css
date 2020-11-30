@@ -1,0 +1,899 @@
+/*!
+  * Basket v1.0.0
+  * https://getbasket.co
+  *
+  * Copyright (c) 2020 Omar Quazi
+  * Licensed under the MIT license
+ */
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap");
+:root {
+  --bg-color: #FAFAFA;
+  --text-color: #000;
+  --blue: #007AFF;
+  --green: #34C759;
+  --indigo: #5856D6;
+  --orange: #FF9500;
+  --pink: #FF2D55;
+  --purple: #AF52DE;
+  --red: #FF3B30;
+  --teal: #5AC8FA;
+  --yellow: #FFCC00;
+}
+
+[data-theme="dark"] {
+  --bg-color: #000;
+  --text-color: #fff;
+  --blue: #0A84FF;
+  --green: #30D158;
+  --indigo: #5856D6;
+  --orange: #FF9F0A;
+  --pink: #FF375F;
+  --purple: #BF5AF2;
+  --red: #FF453A;
+  --teal: #64D2FF;
+  --yellow: #FFD60A;
+}
+
+/* Full sized container using full width of the viewport */
+.container-fluid {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*
+ *  A little smaller container, adding a little padding 5% each side
+ *  will be used for mobile screens */
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+.container .row {
+  margin-left: -.75rem;
+  margin-right: -0.75rem;
+}
+
+/* Changing the padding if the screen is tablet size */
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+
+/* Changing the padding if the screen is a desktop */
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 70%;
+  }
+}
+
+/* Setting up rows */
+.container-fluid .row {
+  margin-left: -.75rem;
+  margin-right: -0.75rem;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row .col {
+  box-sizing: border-box;
+  padding: 0 .75rem;
+  min-height: 1px;
+  float: left;
+}
+
+.row .col.sm-1 {
+  width: 8.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.sm-2 {
+  width: 16.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.sm-3 {
+  width: 25%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.sm-4 {
+  width: 33.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.sm-5 {
+  width: 41.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.sm-6 {
+  width: 50%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.sm-7 {
+  width: 58.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.sm-8 {
+  width: 66.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.sm-9 {
+  width: 75%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.sm-10 {
+  width: 83.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.sm-11 {
+  width: 91.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.sm-12 {
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+/*
+ *  Setting up columns:
+ *  These will be used to help set up custom sizing per screen size
+ *  for the grid elements */
+/* Columns for use on mobile devices */
+/* Columns for use on devices bigger than mobiles, tablets usually */
+@media only screen and (min-width: 601px) {
+  .row .col.md-1 {
+    width: 8.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.md-2 {
+    width: 16.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.md-3 {
+    width: 25%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.md-4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.md-5 {
+    width: 41.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.md-6 {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.md-7 {
+    width: 58.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.md-8 {
+    width: 66.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.md-9 {
+    width: 75%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.md-10 {
+    width: 83.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.md-11 {
+    width: 91.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.md-12 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+}
+
+/* Columns for use on most desktop devices */
+@media only screen and (min-width: 993px) {
+  .row .col.lg-1 {
+    width: 8.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.lg-2 {
+    width: 16.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.lg-3 {
+    width: 25%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.lg-4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.lg-5 {
+    width: 41.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.lg-6 {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.lg-7 {
+    width: 58.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.lg-8 {
+    width: 66.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.lg-9 {
+    width: 75%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.lg-10 {
+    width: 83.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.lg-11 {
+    width: 91.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.lg-12 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+}
+
+/* Columns for use on larger screens, usually just very large desktop screens */
+@media only screen and (min-width: 1201px) {
+  .row .col.xlg-1 {
+    width: 8.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xlg-2 {
+    width: 16.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xlg-3 {
+    width: 25%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xlg-4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xlg-5 {
+    width: 41.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xlg-6 {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xlg-7 {
+    width: 58.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xlg-8 {
+    width: 66.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xlg-9 {
+    width: 75%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xlg-10 {
+    width: 83.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xlg-11 {
+    width: 91.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xlg-12 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+}
+
+.footer {
+  width: 100%;
+}
+
+/* I like my header texts with a smaller font weight:  */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+/* center, left and right align:  */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-muted {
+  color: grey;
+}
+
+/* Larger p element for "leading" text */
+.lead {
+  font-size: 1.2em;
+}
+
+.display-1 {
+  font-size: 6rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.display-2 {
+  font-size: 5.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.display-6 {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--text-color);
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5px;
+  border-color: transparent;
+  text-decoration: none;
+}
+
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.btn-link {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+.btn-primary {
+  background: #54a0ff;
+  border: 0.5px solid #54a0ff;
+}
+
+.btn-primary:hover {
+  background: #2e86de;
+}
+
+.btn-secondary {
+  background: #8395a7;
+}
+
+.btn-secondary:hover {
+  background: #576574;
+}
+
+.btn-success {
+  background: #1dd1a1;
+}
+
+.btn-success:hover {
+  background: #10ac84;
+}
+
+.btn-danger {
+  background: #ff6b6b;
+}
+
+.btn-danger:hover {
+  background: #ee5253;
+}
+
+.btn-warning {
+  background: #feca57;
+}
+
+.btn-warning:hover {
+  background: #ff9f43;
+}
+
+.btn-info {
+  background: #5f27cd;
+}
+
+.btn-info:hover {
+  background: #341f97;
+}
+
+.btn-dark {
+  background: #222f3e;
+}
+
+.btn-dark:hover {
+  background: #141b24;
+}
+
+button:disabled {
+  opacity: .8;
+  color: white;
+  border: unset;
+  background: grey;
+}
+
+button:disabled:hover {
+  background: grey;
+}
+
+/* Responsive images */
+.img-responsive {
+  overflow: hidden;
+}
+
+.img-responsive img {
+  width: 100%;
+}
+
+/* Profile image */
+.img-rounded {
+  border-radius: 50%;
+}
+
+/* CSS for profile */
+.profile {
+  transition: 0.4s ease-in-out;
+  display: block;
+}
+
+.profile:hover {
+  -webkit-box-shadow: 5px 15px 50px -25px var(--hover-color);
+  -moz-box-shadow: 5px 15px 50px -25px var(--hover-color);
+  box-shadow: 5px 15px 50px -25px var(--hover-color);
+}
+
+.profile img {
+  width: 55%;
+}
+
+.profile a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.contact-option {
+  justify-items: center;
+  align-items: center;
+  display: inline-flex;
+  margin: 2%;
+  min-width: 15%;
+  text-decoration: none;
+}
+
+.contact-option img {
+  margin: auto 4% auto auto;
+  filter: var(--icon-invert);
+}
+
+.contact-option:hover {
+  font-weight: bold;
+}
+
+/* Custom HR */
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid grey;
+}
+
+/* Custom padding classes */
+.padding-1 {
+  padding: 0 1em;
+}
+
+.padding-2 {
+  padding: 0 2em;
+}
+
+.padding-3 {
+  padding: 0 3em;
+}
+
+form {
+  width: 100%;
+}
+
+input[type=email], input[type=file], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url] {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  transition: all .2s ease;
+  border: 1px solid #141b24;
+  border-radius: 2px;
+}
+
+select {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  transition: all .2s ease;
+  border: 1px solid #141b24;
+  border-radius: 2px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  transition: all .2s ease;
+  border: 1px solid #141b24;
+  border-radius: 2px;
+}
+
+textarea[type=text] {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  transition: all .2s ease;
+  border: 1px solid #141b24;
+  border-radius: 2px;
+}
+
+input[type=email]:focus, input[type=file]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus {
+  border-color: #141b24;
+  transition: all 0.2s ease;
+}
+
+select:focus {
+  border-color: #141b24;
+  transition: all 0.2s ease;
+}
+
+textarea:focus, textarea[type=text]:focus {
+  border-color: #141b24;
+  transition: all 0.2s ease;
+}
+
+input {
+  padding: 0.9rem 1rem 0.9rem 2rem;
+}
+
+input[type=checkbox], input[type=radio] {
+  border: 0.5px solid black !important;
+}
+
+textarea {
+  padding: 0.9rem 1rem 0.9rem 2rem;
+}
+
+select {
+  background: #fff;
+  padding: .9rem .5rem;
+  margin: 1.2rem 0;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 12rem;
+  margin: 0;
+}
+
+.input-field span:before {
+  cursor: pointer;
+  position: relative;
+  font-family: fontawesome;
+  top: 3rem;
+  left: .6rem;
+  color: #212121;
+}
+
+.text-area-field span:before {
+  top: 1.8rem;
+}
+
+label {
+  cursor: pointer;
+}
+
+label input[type=checkbox] {
+  display: none;
+}
+
+label input[type=checkbox] + span:before {
+  color: rgba(255, 255, 255, 0);
+  content: "";
+  font-family: fontawesome;
+  border: 1px solid #212121;
+  padding: .4rem;
+  border-radius: 2px;
+  transition: .2s;
+  font-size: 16px;
+}
+
+label input[type=checkbox]:checked + span:before {
+  content: "";
+  font-family: fontawesome;
+  border: 1px solid #212121;
+  padding: .4rem;
+  border-radius: 2px;
+  transition: .2s;
+  font-size: 16px;
+  color: #212121;
+}
+
+label input[type=radio] {
+  display: none;
+}
+
+label input[type=radio] + span:before {
+  color: rgba(255, 255, 255, 0);
+  content: "";
+  font-family: fontawesome;
+  border: 1px solid #212121;
+  padding: .3rem .4rem;
+  border-radius: 100%;
+  transition: .2s;
+  font-size: 14px;
+}
+
+label input[type=radio]:checked + span:before {
+  content: "";
+  font-family: fontawesome;
+  border: 1px solid #212121;
+  padding: .3rem .4rem;
+  border-radius: 100%;
+  transition: .2s;
+  font-size: 14px;
+  color: #212121;
+}
+
+.card {
+  box-shadow: 0;
+  transition: 0.3s;
+  width: 100%;
+  margin: auto auto;
+  text-align: center;
+}
+
+.card .card-body {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.card .card-body img {
+  width: 100%;
+}
+
+.card-hover {
+  transition: 0.3s;
+}
+
+.card-hover:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.modal {
+  position: fixed;
+  background-color: rgba(200, 200, 200, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1502;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal .modal-inner {
+  position: relative;
+  width: 60vw;
+  min-height: 20%;
+  max-height: calc(100vh - 30vh);
+  background: var(--bg-color);
+  color: var(--text-color);
+  top: 20vh;
+  margin: auto;
+}
+
+.modal .modal-header {
+  font-size: 1.2em;
+  font-weight: 100;
+  border-bottom: 0.5px solid var(--active-color);
+  display: block;
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+.modal .modal-body {
+  padding: 0.5em;
+}
+
+.modal .modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 2em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal .modal-close:hover {
+  color: var(--hover-color);
+}
+
+@media only screen and (max-width: 601px) {
+  .modal .modal-inner {
+    width: 100vw;
+  }
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.8s;
+  scroll-behavior: smooth;
+}
