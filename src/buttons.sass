@@ -21,96 +21,15 @@
   background-color: transparent !important
   color: inherit
 
-// Blue Button
-.btn-blue
-  background: var(--blue)
-  border: 0.5px solid var(--blue)
-
-  &:hover
-    background: var(--blue-hover)
-    border: 0.5px solid var(--blue-hover)
-
-// Green Button
-.btn-green
-  background: var(--green)
-  border: 0.5px solid var(--green)
-
-  &:hover
-    background: var(--green-hover)
-    border: 0.5px solid var(--green-hover)
-
-// Indigo
-.btn-indigo
-  background: var(--indigo)
-  border: 0.5px solid var(--indigo)
-
-  &:hover
-    background: var(--indigo-hover)
-    border: 0.5px solid var(--indigo-hover)
-
-// Orange
-.btn-orange
-  background: var(--orange)
-  border: 0.5px solid var(--orange)
-
-  &:hover
-    background: var(--orange-hover)
-    border: 0.5px solid var(--orange-hover)
-
-// Pink
-.btn-pink
-  background: var(--pink)
-  border: 0.5px solid var(--pink)
-
-  &:hover
-    background: var(--pink-hover)
-    border: 0.5px solid var(--pink-hover)
-
-// Purple
-.btn-purple
-  background: var(--purple)
-  border: 0.5px solid var(--purple)
-
-  &:hover
-    background: var(--purple-hover)
-    border: 0.5px solid var(--purple-hover)
 
 
-// Red
-.btn-red
-  background: var(--red)
-  border: 0.5px solid var(--red)
-
-  &:hover
-    background: var(--red-hover)
-    border: 0.5px solid var(--red-hover)
-
-// Teal
-.btn-teal
-  background: var(--teal)
-  border: 0.5px solid var(--teal)
-
-  &:hover
-    background: var(--teal-hover)
-    border: 0.5px solid var(--teal-hover)
-
-
-// Yellow
-.btn-yellow
-  background: var(--yellow)
-  border: 0.5px solid var(--yellow)
-
-  &:hover
-    background: var(--yellow-hover)
-    border: 0.5px solid var(--yellow-hover)
-
-.btn-dark
-  background: var(--dark)
-  border: 0.5px solid var(--dark)
-
-  &:hover
-    background: var(--dark-hover)
-    border: 0.5px solid var(--dark-hover)
+@each $variation in $variations
+  .btn-#{$variation}
+    background: var(--#{$variation})
+    border: 0.5px solid var(--#{$variation})
+    &:hover
+      background: var(--#{$variation}-hover)
+      border: 0.5px solid var(--#{$variation}-hover)
 
 button:disabled
   opacity: .8
@@ -121,3 +40,5 @@ button:disabled
   &:hover
     background: grey
     border: unset
+
+
