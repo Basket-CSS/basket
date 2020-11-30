@@ -4,6 +4,7 @@
 
 > A simple, minimalistic CSS framework
 
+> Oh, and it comes with built-in dark mode.
 
 ## Usage
 

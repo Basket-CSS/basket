@@ -573,6 +573,15 @@ a {
   border-radius: 30px;
 }
 
+.btn-lg {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
 .btn-link {
   background-color: transparent !important;
   color: inherit;
@@ -762,6 +771,22 @@ hr {
 
 .padding-3 {
   padding: 0 3em;
+}
+
+.width-25 {
+  width: 25%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-75 {
+  width: 75%;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 .navbar {
