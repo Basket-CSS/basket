@@ -1,0 +1,165 @@
+.navbar
+  overflow: hidden
+
+.navbar-fixed-top
+  position: fixed
+  z-index: 1000
+  width: 100%
+  top: 0
+
+  .dropdown
+    position: fixed
+    z-index: 1001
+
+.navbar-fixed-bottom
+  position: fixed
+  z-index: 1500
+  width: 100%
+  bottom: 0
+
+.navbar a
+  float: left
+  display: block
+  color: var(--bg-color)
+  text-align: center
+  padding: 14px 16px
+  text-decoration: none
+  font-size: 17px
+
+  &.active, &:hover
+    color: white
+
+.navbar-brand
+  img
+    height: 100%
+    vertical-align: middle !important
+
+  &:hover
+    background: unset !important
+
+.navbar-right
+  float: right
+  padding: 0 2em
+  display: inline-flex
+  opacity: 1
+
+.navbar-blue
+  background: var(--blue)
+  a
+    &.active, &:hover
+      background: var(--blue-hover)
+
+.navbar-green
+  background: var(--green)
+  a
+    &.active, &:hover
+      background: var(--green-hover)
+
+.navbar-indigo
+  background: var(--indigo)
+  a
+    &.active, &:hover
+      background: var(--indigo-hover)
+
+.navbar-orange
+  background: var(--orange)
+  a
+    &.active, &:hover
+      background: var(--orange-hover)
+
+.navbar-pink
+  background: var(--pink)
+  a
+    &.active, &:hover
+      background: var(--pink-hover)
+
+.navbar-purple
+  background: var(--purple)
+  a
+    &.active, &:hover
+      background: var(--purple-hover)
+
+.navbar-red
+  background: var(--red)
+  a
+    &.active, &:hover
+      background: var(--red-hover)
+
+.navbar-teal
+  background: var(--teal)
+  a
+    &.active, &:hover
+      background: var(--teal-hover)
+
+.navbar-yellow
+  background: var(--yellow)
+  a
+    &.active, &:hover
+      background: var(--yellow-hover)
+
+.navbar-dark
+  background: var(--dark)
+  a
+    &.active, &:hover
+      background: var(--dark-hover)
+
+
+
+.dropdown
+  display: block
+
+.dropdown-content
+  display: none
+  min-width: 160px
+  z-index: 1000
+  margin-top: 3em
+  background: var(--bg-color)
+  color: var(--text-color)
+
+  a
+    color: #cccccc
+    padding: 12px 16px
+    text-decoration: none
+    display: block
+
+    &:hover
+      background: unset
+
+.dropdown:hover .dropdown-content
+  display: block
+  color: var(--text-color)
+
+.dropdown-content li
+  list-style: none
+  clear: both
+
+.drop
+  overflow: hidden
+  transition: 0.3s
+
+  .drop-button
+    margin: 0%
+
+.drop-list a
+  float: right
+
+.drop-name
+  float: left
+  left: 0%
+
+.drop-list
+  display: block
+  position: absolute
+  z-index: 2000
+  background-color: var(--bg-color)
+  right: 0
+  width: 100%
+  margin-top: -20%
+  opacity: 0
+  transition: 0.5s ease-in-out
+  padding: 0 2em
+  height: 80px
+
+.drop:hover .drop-list
+  margin-top: 0%
+  opacity: 1

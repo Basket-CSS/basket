@@ -6,7 +6,6 @@
   * Licensed under the MIT license
  */
 
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap");
 :root {
   --bg-color: #FAFAFA;
@@ -765,156 +764,208 @@ hr {
   padding: 0 3em;
 }
 
-form {
+.navbar {
+  overflow: hidden;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  z-index: 1000;
   width: 100%;
+  top: 0;
 }
 
-input[type=email], input[type=file], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url] {
+.navbar-fixed-top .dropdown {
+  position: fixed;
+  z-index: 1001;
+}
+
+.navbar-fixed-bottom {
+  position: fixed;
+  z-index: 1500;
   width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-  transition: all .2s ease;
-  border: 1px solid #141b24;
-  border-radius: 2px;
+  bottom: 0;
 }
 
-select {
-  width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-  transition: all .2s ease;
-  border: 1px solid #141b24;
-  border-radius: 2px;
+.navbar a {
+  float: left;
+  display: block;
+  color: var(--bg-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-textarea {
-  width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-  transition: all .2s ease;
-  border: 1px solid #141b24;
-  border-radius: 2px;
+.navbar a.active, .navbar a:hover {
+  color: white;
 }
 
-textarea[type=text] {
-  width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-  transition: all .2s ease;
-  border: 1px solid #141b24;
-  border-radius: 2px;
+.navbar-brand img {
+  height: 100%;
+  vertical-align: middle !important;
 }
 
-input[type=email]:focus, input[type=file]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus {
-  border-color: #141b24;
-  transition: all 0.2s ease;
+.navbar-brand:hover {
+  background: unset !important;
 }
 
-select:focus {
-  border-color: #141b24;
-  transition: all 0.2s ease;
+.navbar-right {
+  float: right;
+  padding: 0 2em;
+  display: inline-flex;
+  opacity: 1;
 }
 
-textarea:focus, textarea[type=text]:focus {
-  border-color: #141b24;
-  transition: all 0.2s ease;
+.navbar-blue {
+  background: var(--blue);
 }
 
-input {
-  padding: 0.9rem 1rem 0.9rem 2rem;
+.navbar-blue a.active, .navbar-blue a:hover {
+  background: var(--blue-hover);
 }
 
-input[type=checkbox], input[type=radio] {
-  border: 0.5px solid black !important;
+.navbar-green {
+  background: var(--green);
 }
 
-textarea {
-  padding: 0.9rem 1rem 0.9rem 2rem;
+.navbar-green a.active, .navbar-green a:hover {
+  background: var(--green-hover);
 }
 
-select {
-  background: #fff;
-  padding: .9rem .5rem;
-  margin: 1.2rem 0;
+.navbar-indigo {
+  background: var(--indigo);
 }
 
-textarea {
-  resize: vertical;
-  min-height: 12rem;
-  margin: 0;
+.navbar-indigo a.active, .navbar-indigo a:hover {
+  background: var(--indigo-hover);
 }
 
-.input-field span:before {
-  cursor: pointer;
-  position: relative;
-  font-family: fontawesome;
-  top: 3rem;
-  left: .6rem;
-  color: #212121;
+.navbar-orange {
+  background: var(--orange);
 }
 
-.text-area-field span:before {
-  top: 1.8rem;
+.navbar-orange a.active, .navbar-orange a:hover {
+  background: var(--orange-hover);
 }
 
-label {
-  cursor: pointer;
+.navbar-pink {
+  background: var(--pink);
 }
 
-input[type=checkbox] {
+.navbar-pink a.active, .navbar-pink a:hover {
+  background: var(--pink-hover);
+}
+
+.navbar-purple {
+  background: var(--purple);
+}
+
+.navbar-purple a.active, .navbar-purple a:hover {
+  background: var(--purple-hover);
+}
+
+.navbar-red {
+  background: var(--red);
+}
+
+.navbar-red a.active, .navbar-red a:hover {
+  background: var(--red-hover);
+}
+
+.navbar-teal {
+  background: var(--teal);
+}
+
+.navbar-teal a.active, .navbar-teal a:hover {
+  background: var(--teal-hover);
+}
+
+.navbar-yellow {
+  background: var(--yellow);
+}
+
+.navbar-yellow a.active, .navbar-yellow a:hover {
+  background: var(--yellow-hover);
+}
+
+.navbar-dark {
+  background: var(--dark);
+}
+
+.navbar-dark a.active, .navbar-dark a:hover {
+  background: var(--dark-hover);
+}
+
+.dropdown {
+  display: block;
+}
+
+.dropdown-content {
   display: none;
+  min-width: 160px;
+  z-index: 1000;
+  margin-top: 3em;
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
-input[type=checkbox] + span:before {
-  color: rgba(255, 255, 255, 0);
-  content: "";
-  font-family: fontawesome;
-  border: 1px solid #212121;
-  padding: .4rem;
-  border-radius: 2px;
-  transition: .2s;
-  font-size: 16px;
+.dropdown-content a {
+  color: #cccccc;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-input[type=checkbox]:checked + span:before {
-  content: "";
-  font-family: fontawesome;
-  border: 1px solid #212121;
-  padding: .4rem;
-  border-radius: 2px;
-  transition: .2s;
-  font-size: 16px;
-  color: #212121;
+.dropdown-content a:hover {
+  background: unset;
 }
 
-input[type=radio] {
-  display: none;
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: var(--text-color);
 }
 
-input[type=radio] + span:before {
-  color: rgba(255, 255, 255, 0);
-  content: "";
-  font-family: fontawesome;
-  border: 1px solid #212121;
-  padding: .3rem .4rem;
-  border-radius: 100%;
-  transition: .2s;
-  font-size: 14px;
+.dropdown-content li {
+  list-style: none;
+  clear: both;
 }
 
-input[type=radio]:checked + span:before {
-  content: "";
-  font-family: fontawesome;
-  border: 1px solid #212121;
-  padding: .3rem .4rem;
-  border-radius: 100%;
-  transition: .2s;
-  font-size: 14px;
-  color: #212121;
+.drop {
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.drop .drop-button {
+  margin: 0%;
+}
+
+.drop-list a {
+  float: right;
+}
+
+.drop-name {
+  float: left;
+  left: 0%;
+}
+
+.drop-list {
+  display: block;
+  position: absolute;
+  z-index: 2000;
+  background-color: var(--bg-color);
+  right: 0;
+  width: 100%;
+  margin-top: -20%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  padding: 0 2em;
+  height: 80px;
+}
+
+.drop:hover .drop-list {
+  margin-top: 0%;
+  opacity: 1;
 }
 
 .card {
