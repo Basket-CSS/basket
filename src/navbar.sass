@@ -43,67 +43,12 @@
   display: inline-flex
   opacity: 1
 
-.navbar-blue
-  background: var(--blue)
-  a
-    &.active, &:hover
-      background: var(--blue-hover)
-
-.navbar-green
-  background: var(--green)
-  a
-    &.active, &:hover
-      background: var(--green-hover)
-
-.navbar-indigo
-  background: var(--indigo)
-  a
-    &.active, &:hover
-      background: var(--indigo-hover)
-
-.navbar-orange
-  background: var(--orange)
-  a
-    &.active, &:hover
-      background: var(--orange-hover)
-
-.navbar-pink
-  background: var(--pink)
-  a
-    &.active, &:hover
-      background: var(--pink-hover)
-
-.navbar-purple
-  background: var(--purple)
-  a
-    &.active, &:hover
-      background: var(--purple-hover)
-
-.navbar-red
-  background: var(--red)
-  a
-    &.active, &:hover
-      background: var(--red-hover)
-
-.navbar-teal
-  background: var(--teal)
-  a
-    &.active, &:hover
-      background: var(--teal-hover)
-
-.navbar-yellow
-  background: var(--yellow)
-  a
-    &.active, &:hover
-      background: var(--yellow-hover)
-
-.navbar-dark
-  background: var(--dark)
-  a
-    &.active, &:hover
-      background: var(--dark-hover)
-
-
+@each $variation in $variations
+  .navbar-#{$variation}
+    background: var(--#{$variation})
+    a
+      &.active, &:hover
+        background: var(--#{$variation}-hover)
 
 .dropdown
   display: block
