@@ -12,28 +12,50 @@
   --bg-color: #FAFAFA;
   --text-color: #000;
   --blue: #007AFF;
+  --blue-hover: #006ee6;
   --green: #34C759;
+  --green-hover: #2fb350;
   --indigo: #5856D6;
+  --indigo-hover: #4441d1;
   --orange: #FF9500;
+  --orange-hover: #e68600;
   --pink: #FF2D55;
+  --pink-hover: #ff1440;
   --purple: #AF52DE;
+  --purple-hover: #a53dda;
   --red: #FF3B30;
+  --red-hover: #ff2317;
   --teal: #5AC8FA;
+  --teal-hover: #41c0f9;
   --yellow: #FFCC00;
+  --yellow-hover: #e6b800;
+  --dark: #333;
+  --dark-hover: #262626;
 }
 
 [data-theme="dark"] {
   --bg-color: #000;
   --text-color: #fff;
   --blue: #0A84FF;
+  --blue-hover: #2491ff;
   --green: #30D158;
+  --green-hover: #45d669;
   --indigo: #5856D6;
+  --indigo-hover: #6c6bdb;
   --orange: #FF9F0A;
+  --orange-hover: #ffa924;
   --pink: #FF375F;
+  --pink-hover: #ff5173;
   --purple: #BF5AF2;
+  --purple-hover: #c872f4;
   --red: #FF453A;
+  --red-hover: #ff5d54;
   --teal: #64D2FF;
+  --teal-hover: #7ed9ff;
   --yellow: #FFD60A;
+  --yellow-hover: #ffda24;
+  --dark: #333;
+  --dark-hover: #404040;
 }
 
 /* Full sized container using full width of the viewport */
@@ -417,7 +439,31 @@
 
 /* I like my header texts with a smaller font weight:  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 100;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
 }
 
 /* center, left and right align:  */
@@ -431,6 +477,38 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-right {
   text-align: right;
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.text-indigo {
+  color: var(--indigo);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-pink {
+  color: var(--pink);
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.text-teal {
+  color: var(--teal);
+}
+
+.text-yellow {
+  color: var(--yellow);
 }
 
 .text-muted {
@@ -486,7 +564,6 @@ a {
   padding: 1rem 1.5rem;
   color: #fff;
   cursor: pointer;
-  text-transform: uppercase;
   font-weight: 700;
   border-radius: 5px;
   border-color: transparent;
@@ -502,61 +579,104 @@ a {
   color: inherit;
 }
 
-.btn-primary {
-  background: #54a0ff;
-  border: 0.5px solid #54a0ff;
+.btn-blue {
+  background: var(--blue);
+  border: 0.5px solid var(--blue);
 }
 
-.btn-primary:hover {
-  background: #2e86de;
+.btn-blue:hover {
+  background: var(--blue-hover);
+  border: 0.5px solid var(--blue-hover);
 }
 
-.btn-secondary {
-  background: #8395a7;
+.btn-green {
+  background: var(--green);
+  border: 0.5px solid var(--green);
 }
 
-.btn-secondary:hover {
-  background: #576574;
+.btn-green:hover {
+  background: var(--green-hover);
+  border: 0.5px solid var(--green-hover);
 }
 
-.btn-success {
-  background: #1dd1a1;
+.btn-indigo {
+  background: var(--indigo);
+  border: 0.5px solid var(--indigo);
 }
 
-.btn-success:hover {
-  background: #10ac84;
+.btn-indigo:hover {
+  background: var(--indigo-hover);
+  border: 0.5px solid var(--indigo-hover);
 }
 
-.btn-danger {
-  background: #ff6b6b;
+.btn-orange {
+  background: var(--orange);
+  border: 0.5px solid var(--orange);
 }
 
-.btn-danger:hover {
-  background: #ee5253;
+.btn-orange:hover {
+  background: var(--orange-hover);
+  border: 0.5px solid var(--orange-hover);
 }
 
-.btn-warning {
-  background: #feca57;
+.btn-pink {
+  background: var(--pink);
+  border: 0.5px solid var(--pink);
 }
 
-.btn-warning:hover {
-  background: #ff9f43;
+.btn-pink:hover {
+  background: var(--pink-hover);
+  border: 0.5px solid var(--pink-hover);
 }
 
-.btn-info {
-  background: #5f27cd;
+.btn-purple {
+  background: var(--purple);
+  border: 0.5px solid var(--purple);
 }
 
-.btn-info:hover {
-  background: #341f97;
+.btn-purple:hover {
+  background: var(--purple-hover);
+  border: 0.5px solid var(--purple-hover);
+}
+
+.btn-red {
+  background: var(--red);
+  border: 0.5px solid var(--red);
+}
+
+.btn-red:hover {
+  background: var(--red-hover);
+  border: 0.5px solid var(--red-hover);
+}
+
+.btn-teal {
+  background: var(--teal);
+  border: 0.5px solid var(--teal);
+}
+
+.btn-teal:hover {
+  background: var(--teal-hover);
+  border: 0.5px solid var(--teal-hover);
+}
+
+.btn-yellow {
+  background: var(--yellow);
+  border: 0.5px solid var(--yellow);
+}
+
+.btn-yellow:hover {
+  background: var(--yellow-hover);
+  border: 0.5px solid var(--yellow-hover);
 }
 
 .btn-dark {
-  background: #222f3e;
+  background: var(--dark);
+  border: 0.5px solid var(--dark);
 }
 
 .btn-dark:hover {
-  background: #141b24;
+  background: var(--dark-hover);
+  border: 0.5px solid var(--dark-hover);
 }
 
 button:disabled {
@@ -568,6 +688,7 @@ button:disabled {
 
 button:disabled:hover {
   background: grey;
+  border: unset;
 }
 
 /* Responsive images */
@@ -744,11 +865,11 @@ label {
   cursor: pointer;
 }
 
-label input[type=checkbox] {
+input[type=checkbox] {
   display: none;
 }
 
-label input[type=checkbox] + span:before {
+input[type=checkbox] + span:before {
   color: rgba(255, 255, 255, 0);
   content: "";
   font-family: fontawesome;
@@ -759,7 +880,7 @@ label input[type=checkbox] + span:before {
   font-size: 16px;
 }
 
-label input[type=checkbox]:checked + span:before {
+input[type=checkbox]:checked + span:before {
   content: "";
   font-family: fontawesome;
   border: 1px solid #212121;
@@ -770,11 +891,11 @@ label input[type=checkbox]:checked + span:before {
   color: #212121;
 }
 
-label input[type=radio] {
+input[type=radio] {
   display: none;
 }
 
-label input[type=radio] + span:before {
+input[type=radio] + span:before {
   color: rgba(255, 255, 255, 0);
   content: "";
   font-family: fontawesome;
@@ -785,7 +906,7 @@ label input[type=radio] + span:before {
   font-size: 14px;
 }
 
-label input[type=radio]:checked + span:before {
+input[type=radio]:checked + span:before {
   content: "";
   font-family: fontawesome;
   border: 1px solid #212121;
@@ -888,12 +1009,21 @@ label input[type=radio]:checked + span:before {
   }
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
 html, body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   padding: 0;
   margin: 0;
   background: var(--bg-color);
   color: var(--text-color);
-  transition: all 0.8s;
+  letter-spacing: .01em;
   scroll-behavior: smooth;
+  transition: all 0.8s;
 }

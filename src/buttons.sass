@@ -1,6 +1,6 @@
 .btn
   padding: 1rem 1.5rem
-  color: #fff
+  color: $text-dark
   cursor: pointer
   font-weight: 700
   border-radius: 5px
@@ -14,48 +14,96 @@
   background-color: transparent !important
   color: inherit
 
-.btn-primary
-  background: #54a0ff
-  border: 0.5px solid #54a0ff
+// Blue Button
+.btn-blue
+  background: var(--blue)
+  border: 0.5px solid var(--blue)
 
   &:hover
-    background: #2e86de
+    background: var(--blue-hover)
+    border: 0.5px solid var(--blue-hover)
 
-.btn-secondary
-  background: #8395a7
-
-  &:hover
-    background: #576574
-
-.btn-success
-  background: #1dd1a1
+// Green Button
+.btn-green
+  background: var(--green)
+  border: 0.5px solid var(--green)
 
   &:hover
-    background: #10ac84
+    background: var(--green-hover)
+    border: 0.5px solid var(--green-hover)
 
-.btn-danger
-  background: #ff6b6b
-
-  &:hover
-    background: #ee5253
-
-.btn-warning
-  background: #feca57
+// Indigo
+.btn-indigo
+  background: var(--indigo)
+  border: 0.5px solid var(--indigo)
 
   &:hover
-    background: #ff9f43
+    background: var(--indigo-hover)
+    border: 0.5px solid var(--indigo-hover)
 
-.btn-info
-  background: #5f27cd
+// Orange
+.btn-orange
+  background: var(--orange)
+  border: 0.5px solid var(--orange)
 
   &:hover
-    background: #341f97
+    background: var(--orange-hover)
+    border: 0.5px solid var(--orange-hover)
+
+// Pink
+.btn-pink
+  background: var(--pink)
+  border: 0.5px solid var(--pink)
+
+  &:hover
+    background: var(--pink-hover)
+    border: 0.5px solid var(--pink-hover)
+
+// Purple
+.btn-purple
+  background: var(--purple)
+  border: 0.5px solid var(--purple)
+
+  &:hover
+    background: var(--purple-hover)
+    border: 0.5px solid var(--purple-hover)
+
+
+// Red
+.btn-red
+  background: var(--red)
+  border: 0.5px solid var(--red)
+
+  &:hover
+    background: var(--red-hover)
+    border: 0.5px solid var(--red-hover)
+
+// Teal
+.btn-teal
+  background: var(--teal)
+  border: 0.5px solid var(--teal)
+
+  &:hover
+    background: var(--teal-hover)
+    border: 0.5px solid var(--teal-hover)
+
+
+// Yellow
+.btn-yellow
+  background: var(--yellow)
+  border: 0.5px solid var(--yellow)
+
+  &:hover
+    background: var(--yellow-hover)
+    border: 0.5px solid var(--yellow-hover)
 
 .btn-dark
-  background: #222f3e
+  background: var(--dark)
+  border: 0.5px solid var(--dark)
 
   &:hover
-    background: #141b24
+    background: var(--dark-hover)
+    border: 0.5px solid var(--dark-hover)
 
 button:disabled
   opacity: .8
@@ -65,3 +113,4 @@ button:disabled
 
   &:hover
     background: grey
+    border: unset

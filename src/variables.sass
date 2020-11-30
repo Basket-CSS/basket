@@ -11,23 +11,7 @@ $purple-light: #AF52DE
 $red-light: #FF3B30
 $teal-light: #5AC8FA
 $yellow-light: #FFCC00
-
-
-
-\:root
-  --bg-color: #{$bg-light}
-  --text-color: #{$text-light}
-  --blue: #{$blue-light}
-  --green: #{$green-light}
-  --indigo: #{$indigo-light}
-  --orange: #{$orange-light}
-  --pink: #{$pink-light}
-  --purple: #{$purple-light}
-  --red: #{$red-light}
-  --teal: #{$teal-light}
-  --yellow: #{$yellow-light}
-
-
+$hover-percent: 5%
 
 // Dark Color
 $bg-dark: #000
@@ -41,18 +25,59 @@ $purple-dark: #BF5AF2
 $red-dark: #FF453A
 $teal-dark: #64D2FF
 $yellow-dark: #FFD60A
+$hover-percent-dark: 5%
 
+// Other Colors
+$dark: #333
+
+
+\:root
+  --bg-color: #{$bg-light}
+  --text-color: #{$text-light}
+  --blue: #{$blue-light}
+  --blue-hover: #{darken($blue-light, $hover-percent)}
+  --green: #{$green-light}
+  --green-hover: #{darken($green-light, $hover-percent)}
+  --indigo: #{$indigo-light}
+  --indigo-hover: #{darken($indigo-light, $hover-percent)}
+  --orange: #{$orange-light}
+  --orange-hover: #{darken($orange-light, $hover-percent)}
+  --pink: #{$pink-light}
+  --pink-hover: #{darken($pink-light, $hover-percent)}
+  --purple: #{$purple-light}
+  --purple-hover: #{darken($purple-light, $hover-percent)}
+  --red: #{$red-light}
+  --red-hover: #{darken($red-light, $hover-percent)}
+  --teal: #{$teal-light}
+  --teal-hover: #{darken($teal-light, $hover-percent)}
+  --yellow: #{$yellow-light}
+  --yellow-hover: #{darken($yellow-light, $hover-percent)}
+  --dark: #{$dark}
+  --dark-hover: #{darken($dark, $hover-percent)}
+  
+  
 [data-theme="dark"]
   --bg-color: #{$bg-dark}
   --text-color: #{$text-dark}
   --blue: #{$blue-dark}
+  --blue-hover: #{lighten($blue-dark, $hover-percent-dark)}
   --green: #{$green-dark}
+  --green-hover: #{lighten($green-dark, $hover-percent-dark)}
   --indigo: #{$indigo-dark}
+  --indigo-hover: #{lighten($indigo-dark, $hover-percent-dark)}
   --orange: #{$orange-dark}
+  --orange-hover: #{lighten($orange-dark, $hover-percent-dark)}
   --pink: #{$pink-dark}
+  --pink-hover: #{lighten($pink-dark, $hover-percent-dark)}
   --purple: #{$purple-dark}
+  --purple-hover: #{lighten($purple-dark, $hover-percent-dark)}
   --red: #{$red-dark}
+  --red-hover: #{lighten($red-dark, $hover-percent-dark)}
   --teal: #{$teal-dark}
+  --teal-hover: #{lighten($teal-dark, $hover-percent-dark)}
   --yellow: #{$yellow-dark}
+  --yellow-hover: #{lighten($yellow-dark, $hover-percent-dark)}
+  --dark: #{$dark}
+  --dark-hover: #{lighten($dark, $hover-percent-dark)}
 
 
