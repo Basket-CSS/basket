@@ -11,8 +11,7 @@
 
 .container
   margin: 0 auto
-  max-width: 128rem
-  width: calc(100% - 10rem)
+  width: 100vw
 
 .row
   display: flex
@@ -21,8 +20,10 @@
   width: 100%
   flex-wrap: wrap
 
-.col
-  flex: 1 1 auto
+  .col
+    flex-wrap: wrap
+    flex-direction: column
+    flex: 0 0 auto
 
 @for $i from 1 through $columns
   .col-#{$i}
@@ -31,12 +32,12 @@
     margin-left: 100% / $columns * $i
 
 // Larger than mobile screen
-@media (min-width: 42.0rem) // Safari desktop has a bug using `rem`, but Safari mobile works
-  .row
-    flex-direction: row
-    margin-left: -1.0rem
-    width: calc(100% + 2.0rem)
+// @media (max-width: 42.0rem) // Safari desktop has a bug using `rem`, but Safari mobile works
+//   .row
+//     flex-direction: row
+//     margin-left: -1.0rem
+//     width: calc(100% + 2.0rem)
 
-    .col
-      margin-bottom: inherit
-      padding: 0 1.0rem
+//     .col
+//       margin-bottom: inherit
+//       padding: 0 1.0rem

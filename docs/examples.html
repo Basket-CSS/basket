@@ -8,10 +8,11 @@
     <title>Basket CSS Framework Examples</title>
 
     <meta name="author" content="Omar Quazi">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="dist/basket.css">
 
     <style>
-        #grid-sample.container > .row > * {
+        #grid-sample>.row>* {
             border: 1px solid #000;
             padding: 1.5em;
             background: var(--dark);
@@ -25,7 +26,8 @@
     <div class="hero hero-lg bg-grey align-items-center text-center">
         <div class="hero-body">
             <h1>Basket Examples</h1>
-            <p class="lead">Done looking around for a CSS framework? Let's take a look at what Basket can do for you.</p>
+            <p class="lead">Done looking around for a CSS framework? Let's take a look at what Basket can do for you.
+            </p>
             <p>For dark mode, <a href="#dark-mode">click here</a></p>
         </div>
     </div>
@@ -36,29 +38,29 @@
                 <a id="getting-started"></a>
                 <h3>Getting Started</h3>
                 <p>Let's start with how to get the latest version of the framework:</p>
-                
                 <p class="lead text-bold">1. Downloading a zip</p>
-                <button class="btn btn-blue" type="" href="https://github.com/blacksector/basket/releases/latest">Download Here</button>
+                <button class="btn btn-blue" type=""
+                    href="https://github.com/blacksector/basket/releases/latest">Download Here</button>
 
                 <p class="lead text-bold">2. From CDN</p>
-                <blockquote class="blockquote blockquote-blue">
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/blacksector/basket@latest/dist/basket.min.css"&gt;
+                
+                <blockquote class="blockquote blockquote-blue" style="line-height: 1; padding-bottom: 2em">
+                    <p>link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/blacksector/basket@latest/dist/basket.min.css"</p>
                 </blockquote>
 
                 <p class="lead text-bold">3. Compiling from source</p>
-                <small>Note: You'll need git, and npm installed for this. The source files will be located in the <code>dist/</code> folder</small>
+                <small>
+                    Note: You'll need git, and npm installed for this. The source files will be located in the <code>dist/</code> folder
+                </small>
                 <blockquote class="blockquote blockquote-blue">
-                    $ git clone https://github.com/blacksector/basket.git && cd basket
-                    <br />
-                    $ npm install
-                    <br />
-                    $ npm run build
+                    <p>$ git clone https://github.com/blacksector/basket.git && cd basket</p>
+                    <p>$ npm install</p>
+                    <p>$ npm run build</p>
                 </blockquote>
                 <h3>Usage</h3>
                 <blockquote class="blockquote blockquote-blue">
-                    &lt;!-- Basket CSS --&gt;
-                    <br />
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/blacksector/basket@latest/dist/basket.min.css"&gt;
+                    <p>&lt;!-- Basket CSS --&gt;</p>
+                    <p>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/blacksector/basket@latest/dist/basket.min.css"&gt;</p>
                 </blockquote>
             </div>
         </div>
@@ -67,18 +69,20 @@
                 <a id="typography"></a>
                 <h3>Typography</h3>
                 <p>
-                    Basket uses the Inter font designed by Rasmus Andersson and hosted by Google Fonts. We import it directly into our
-                    files so that you don't need to add another line of html or css in your code. Basket intends to be a simple drop-in solution.
+                    Basket uses the Inter font designed by Rasmus Andersson and hosted by Google Fonts. We import it
+                    directly into our
+                    files so that you don't need to add another line of html or css in your code. Basket intends to be a
+                    simple drop-in solution.
                 </p>
                 <p class="lead text-bold">Display</p>
-                <blockquote class="blockquote blockquote-blue bg-blue" style="line-height: 0; padding-bottom: 2em">
+                <blockquote class="blockquote blockquote-blue" style="line-height: 0; padding-bottom: 2em">
                     <p class="display-1">Display 1</p>
                     <p class="display-2">Display 2</p>
                     <p class="display-3">Display 3</p>
                     <p class="display-4">Display 4</p>
                 </blockquote>
                 <p class="lead text-bold">Headings</p>
-                <blockquote class="blockquote blockquote-blue bg-blue" style="line-height: 1; padding-bottom: 2em">
+                <blockquote class="blockquote blockquote-blue" style="line-height: 1; padding-bottom: 2em">
                     <h1>Heading h1</h1>
                     <h2>Heading h2</h2>
                     <h3>Heading h3</h3>
@@ -105,19 +109,20 @@
                 <a id="blockquote"></a>
                 <h3>Blockquote</h3>
                 <p>
-                    We have all the colours for blockquotes! Simple add an additional class with <code>blockquote-*</code> with <code>*</code>
+                    We have all the colours for blockquotes! Simple add an additional class with
+                    <code>blockquote-*</code> with <code>*</code>
                     replacing any one of the color options.
                 </p>
                 <blockquote class="blockquote">
-                   <span class="text-green">&lt;!-- Default blockquote without a left-border --&gt;</span>
-                   <br />
-                   &lt;blockquote class="blockquote"&gt;
-                   <br />
-                   &nbsp;&nbsp;&nbsp;&nbsp;Hello World
-                   <br />
-                   &lt;/blockquote&gt;
+                    <span class="text-green">&lt;!-- Default blockquote without a left-border --&gt;</span>
+                    <br />
+                    &lt;blockquote class="blockquote"&gt;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;Hello World
+                    <br />
+                    &lt;/blockquote&gt;
                 </blockquote>
-                
+
                 <blockquote class="blockquote blockquote-blue">
                     <span class="text-green">&lt;!-- Default blockquote witha a blue left-border --&gt;</span>
                     <br />
@@ -126,9 +131,9 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;Hello World
                     <br />
                     &lt;/blockquote&gt;
-                 </blockquote>
+                </blockquote>
 
-                 <blockquote class="blockquote blockquote-green">
+                <blockquote class="blockquote blockquote-green">
                     <span class="text-green">&lt;!-- Default blockquote witha a green left-border --&gt;</span>
                     <br />
                     &lt;blockquote class="blockquote blockquote-green"&gt;
@@ -136,7 +141,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;Hello World
                     <br />
                     &lt;/blockquote&gt;
-                 </blockquote>
+                </blockquote>
 
             </div>
         </div>
@@ -210,7 +215,7 @@
                 <button class="btn btn-rounded btn-teal">Teal</button>
                 <button class="btn btn-rounded btn-yellow">Yellow</button>
                 <button class="btn btn-rounded btn-dark">Dark</button>
-                
+
                 <p>Disabled Buttons</p>
                 <button class="btn btn-blue" disabled>Dark</button>
                 <button class="btn btn-rounded btn-dark" disabled>Dark</button>
@@ -315,24 +320,24 @@
                     <li> One.
                     <li> Two.
                     <li> Three. Well, probably this list item should be longer. Note that
-                  for short items lists look better if they are compactly presented,
-                         whereas for long items, it would be better to have more vertical spacing between items.
+                        for short items lists look better if they are compactly presented,
+                        whereas for long items, it would be better to have more vertical spacing between items.
                     <li> Four. This is the last item in this list.
-                         Let us terminate the list now without making any more fuss about it.
-                  </ul>
+                        Let us terminate the list now without making any more fuss about it.
+                </ul>
                 <p>This is a paragraph before a <strong>numbered</strong> list (<code>ol</code>). Note that
-                  the spacing between a paragraph and a list before or after that is hard
-                  to tune in a user style sheet. You can't guess which paragraphs are
-                  logically related to a list, e.g. as a "list header".</p>
-                  <ol>
+                    the spacing between a paragraph and a list before or after that is hard
+                    to tune in a user style sheet. You can't guess which paragraphs are
+                    logically related to a list, e.g. as a "list header".</p>
+                <ol>
                     <li> One.
                     <li> Two.
                     <li> Three. Well, probably this list item should be longer. Note that if
-                  items are short, lists look better if they are compactly presented,
-                         whereas for long items, it would be better to have more vertical spacing between items.
+                        items are short, lists look better if they are compactly presented,
+                        whereas for long items, it would be better to have more vertical spacing between items.
                     <li> Four. This is the last item in this list.
-                         Let us terminate the list now without making any more fuss about it.
-                  </ol>
+                        Let us terminate the list now without making any more fuss about it.
+                </ol>
             </div>
         </div>
 

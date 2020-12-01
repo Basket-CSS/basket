@@ -119,8 +119,7 @@
  *  will be used for mobile screens */
 .container {
   margin: 0 auto;
-  max-width: 128rem;
-  width: calc(100% - 10rem);
+  width: 100vw;
 }
 
 .row {
@@ -137,10 +136,16 @@
       flex-wrap: wrap;
 }
 
-.col {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+.row .col {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .col-1 {
@@ -261,21 +266,6 @@
 
 .col-offset-12 {
   margin-left: 100%;
-}
-
-@media (min-width: 42rem) {
-  .row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: -1.0rem;
-    width: calc(100% + 2.0rem);
-  }
-  .row .col {
-    margin-bottom: inherit;
-    padding: 0 1.0rem;
-  }
 }
 
 /* I like my header texts with a smaller font weight:  */
@@ -916,6 +906,7 @@ hr {
   padding: 1rem 1.5rem;
   background: hsl(0, 0%, var(--lightness-hsl));
   color: var(--text-color);
+  overflow-x: auto;
 }
 
 .blockquote *:last-child {
@@ -1217,21 +1208,31 @@ label {
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 *:focus {
   outline: none;
 }
 
-html, body {
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
   font-family: 'Inter', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   padding: 0;
   margin: 0;
   background: var(--bg-color);
   color: var(--text-color);
+  font-size: 1.6em;
+  font-weight: 300;
   letter-spacing: .01em;
+  line-height: 1.6;
+  word-wrap: break-word;
   scroll-behavior: smooth;
   -webkit-transition: all 0.8s;
   -o-transition: all 0.8s;
