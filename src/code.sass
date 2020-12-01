@@ -1,0 +1,23 @@
+code
+  margin: 0 0.3rem
+  padding: 0.1rem 0.5rem
+  background: hsl(0, 0%, var(--lightness-hsl))
+  color: var(--text-color)
+  font-size: 0.95em
+  white-space: nowrap
+
+pre
+	background: hsl(0, 0%, var(--lightness-hsl))
+	overflow-y: hidden
+
+	@each $variation in $variations
+		.pre-#{$variation}
+			border-left: 0.3rem solid var(--#{$variation})
+
+  & > code
+    border-radius: 0
+    display: block
+    padding: 0.9rem 1.5rem
+    white-space: pre
+	
+	

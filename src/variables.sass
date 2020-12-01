@@ -1,39 +1,43 @@
 
 // Light Color
-$bg-light: #FAFAFA
-$text-light: #000
-$blue-light: #007AFF
-$green-light: #34C759
-$indigo-light: #5856D6
-$orange-light: #FF9500
-$pink-light: #FF2D55
-$purple-light: #AF52DE
-$red-light: #FF3B30
-$teal-light: #5AC8FA
-$yellow-light: #FFCC00
+$bg-light: #ffffff
+$bg-grey-light: #fafafa
+$text-light: #000000
+$blue-light: #007aff
+$green-light: #34c759
+$indigo-light: #5856d6
+$orange-light: #ff9500
+$pink-light: #ff2d55
+$purple-light: #af52dE
+$red-light: #ff3b30
+$teal-light: #5ac8fa
+$yellow-light: #ffcc00
 $hover-percent: 5%
 
 // Dark Color
-$bg-dark: #000
-$text-dark: #fff
-$blue-dark: #0A84FF
-$green-dark: #30D158
-$indigo-dark: #5856D6
-$orange-dark: #FF9F0A
-$pink-dark: #FF375F
-$purple-dark: #BF5AF2
-$red-dark: #FF453A
-$teal-dark: #64D2FF
-$yellow-dark: #FFD60A
+$bg-dark: #000000
+$bg-grey-dark: #333333
+$text-dark: #ffffff
+$blue-dark: #0a84ff
+$green-dark: #30d158
+$indigo-dark: #5856d6
+$orange-dark: #ff9f0a
+$pink-dark: #ff375f
+$purple-dark: #bf5af2
+$red-dark: #ff453a
+$teal-dark: #64d2ff
+$yellow-dark: #ffd60a
 $hover-percent-dark: 5%
 
 // Other Colors
-$dark: #333
+$dark: #333333
 
-$variations: "blue", "green", "indigo", "orange", "pink", "purple", "red", "teal", "yellow", "dark"
+$variations: "blue", "green", "indigo", "orange", "pink", "purple", "red", "teal", "yellow", "dark", "grey"
 
 \:root, [data-theme="light"]
   --bg-color: #{$bg-light}
+  --bg-grey: #{$bg-grey-light}
+  --grey: #{$bg-grey-light}
   --text-color: #{$text-light}
   --blue: #{$blue-light}
   --blue-hover: #{darken($blue-light, $hover-percent)}
@@ -60,6 +64,8 @@ $variations: "blue", "green", "indigo", "orange", "pink", "purple", "red", "teal
   
 [data-theme="dark"]
   --bg-color: #{$bg-dark}
+  --bg-grey: #{$bg-grey-dark}
+  --grey: #{$bg-grey-dark}
   --text-color: #{$text-dark}
   --blue: #{$blue-dark}
   --blue-hover: #{lighten($blue-dark, $hover-percent-dark)}
@@ -86,3 +92,8 @@ $variations: "blue", "green", "indigo", "orange", "pink", "purple", "red", "teal
 
 // Grid System
 $columns: 12
+
+// Background colours
+@each $variation in $variations
+  .bg-#{$variation}
+    background: var(--#{$variation})

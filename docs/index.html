@@ -125,8 +125,15 @@
 
         .hero {
             text-align: center;
-            padding-top: 15vh;
+            padding-top: 10vh;
         }
+
+        .hero > .col-12:first-child {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
         .darkmode-switch {
             /* position: fixed; */
             padding: 2em;
@@ -148,26 +155,28 @@
     </div>
     <div class="container">
         <div class="row hero">
-            <div class="col-12 text-center">
-                <img src="imgs/basket-logo.png" id="logo" class="img-responsive swing-logo" alt="Basket Framework Logo">
-                <h1 class="h1 text-blue">Basket</h1>
+            <div class="col-12 text-center" style="align-items: center;">
+                <img src="imgs/basket-logo.png" id="logo" class="img-responsive swing-logo" style="display: inline;" alt="Basket Framework Logo">
+                <h1 class="h1 text-blue" style="display: inline;">Basket</h1>
             </div>
             <div class="col-12">
                 Yet again, another CSS framework.
             </div>
-            <div class="col-12 text-muted" style="padding-top: 1em">
-                Underconstruction, come back later bro.
+            <div class="col-12 text-muted text-italic" style="padding-top: 1em">
+                Currently @ <span id="latest-version"></span>
             </div>
             <div class="col-12" style="padding-top: 4em">
-                <a class="btn btn-lg btn-blue" href="examples.html">See Examples</a>
+                <a class="btn btn-lg btn-rounded btn-blue" href="examples.html">See Examples</a>
             </div>
             <div class="col-12" style="padding-top: 3em">
-                <a class="btn btn-dark" href="https://github.com/blacksector/basket">See Repo</a>
+                <a class="btn btn-rounded btn-dark" href="https://github.com/blacksector/basket">See Repo</a>
             </div>
         </div>
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+    <script src="https://rawgit.com/hippich/bower-semver/master/semver.min.js"></script>
     <script>
         // retrieve the element
         element = document.getElementById("logo");
@@ -201,6 +210,18 @@
             }
         }
         
+        var gitHubPath = 'blacksector/basket';  // example repo
+        var url = 'https://api.github.com/repos/' + gitHubPath + '/tags';
+        
+        $.get(url).done(function (data) {
+            var versions = data.sort(function (v1, v2) {
+              return semver.compare(v2.name, v1.name)
+            });
+            $('#latest-version').html(versions[0].name);
+        });
+
+
+
     </script>
 
 </body>

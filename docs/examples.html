@@ -5,16 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Basket CSS Framework</title>
+    <title>Basket CSS Framework Examples</title>
 
     <meta name="author" content="Omar Quazi">
     <link rel="stylesheet" href="dist/basket.css">
 
+    <style>
+        #grid-sample.container > .row > * {
+            border: 1px solid #000;
+            padding: 1.5em;
+            background: var(--dark);
+            color: var(--bg-color);
+        }
+    </style>
+
 </head>
 
 <body>
+    <div class="hero hero-lg bg-grey align-items-center text-center">
+        <div class="hero-body">
+            <h1>Basket Examples</h1>
+            <p class="lead">Done looking around for a CSS framework? Let's take a look at what Basket can do for you.</p>
+            <p>For dark mode, <a href="#dark-mode">click here</a></p>
+        </div>
+    </div>
 
     <div class="container">
+        <div class="row">
+            <div class="col-10 col-offset-1">
+                <a id="getting-started"></a>
+                <h3>Getting Started</h3>
+                <p>Let's start with how to get the latest version of the framework:</p>
+                
+                <p class="lead text-bold">1. Downloading a zip</p>
+                <button class="btn btn-blue" type="" href="https://github.com/blacksector/basket/releases/latest">Download Here</button>
+
+                <p class="lead text-bold">2. From CDN</p>
+                <blockquote class="blockquote blockquote-blue">
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/blacksector/basket@latest/dist/basket.min.css"&gt;
+                </blockquote>
+
+                <p class="lead text-bold">3. Compiling from source</p>
+                <small>Note: You'll need git, and npm installed for this. The source files will be located in the <code>dist/</code> folder</small>
+                <blockquote class="blockquote blockquote-blue">
+                    $ git clone https://github.com/blacksector/basket.git && cd basket
+                    <br />
+                    $ npm install
+                    <br />
+                    $ npm run build
+                </blockquote>
+                <h3>Usage</h3>
+                <blockquote class="blockquote blockquote-blue">
+                    &lt;!-- Basket CSS --&gt;
+                    <br />
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/blacksector/basket@latest/dist/basket.min.css"&gt;
+                </blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 col-offset-1">
+                <a id="typography"></a>
+                <h3>Typography</h3>
+                <p>
+                    Basket uses the Inter font designed by Rasmus Andersson and hosted by Google Fonts. We import it directly into our
+                    files so that you don't need to add another line of html or css in your code. Basket intends to be a simple drop-in solution.
+                </p>
+                <p class="lead text-bold">Display</p>
+                <blockquote class="blockquote blockquote-blue bg-blue" style="line-height: 0; padding-bottom: 2em">
+                    <p class="display-1">Display 1</p>
+                    <p class="display-2">Display 2</p>
+                    <p class="display-3">Display 3</p>
+                    <p class="display-4">Display 4</p>
+                </blockquote>
+                <p class="lead text-bold">Headings</p>
+                <blockquote class="blockquote blockquote-blue bg-blue" style="line-height: 1; padding-bottom: 2em">
+                    <h1>Heading h1</h1>
+                    <h2>Heading h2</h2>
+                    <h3>Heading h3</h3>
+                    <h4>Heading h4</h4>
+                    <h5>Heading h5</h5>
+                    <h6>Heading h6</h6>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 col-offset-1">
+                <a id="colors"></a>
+                <h3>Colors</h3>
+                <p>
+                    We used different colour pallets based on if the site is in light mode vs dark mode.
+                </p>
+                <p class="lead text-bold">Light Mode</p>
+
+                <p class="lead text-bold">Dark Mode</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 col-offset-1">
+                <a id="blockquote"></a>
+                <h3>Blockquote</h3>
+                <p>
+                    We have all the colours for blockquotes! Simple add an additional class with <code>blockquote-*</code> with <code>*</code>
+                    replacing any one of the color options.
+                </p>
+                <blockquote class="blockquote">
+                   <span class="text-green">&lt;!-- Default blockquote without a left-border --&gt;</span>
+                   <br />
+                   &lt;blockquote class="blockquote"&gt;
+                   <br />
+                   &nbsp;&nbsp;&nbsp;&nbsp;Hello World
+                   <br />
+                   &lt;/blockquote&gt;
+                </blockquote>
+                
+                <blockquote class="blockquote blockquote-blue">
+                    <span class="text-green">&lt;!-- Default blockquote witha a blue left-border --&gt;</span>
+                    <br />
+                    &lt;blockquote class="blockquote blockquote-blue"&gt;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;Hello World
+                    <br />
+                    &lt;/blockquote&gt;
+                 </blockquote>
+
+                 <blockquote class="blockquote blockquote-green">
+                    <span class="text-green">&lt;!-- Default blockquote witha a green left-border --&gt;</span>
+                    <br />
+                    &lt;blockquote class="blockquote blockquote-green"&gt;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;Hello World
+                    <br />
+                    &lt;/blockquote&gt;
+                 </blockquote>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="grid-sample" class="container">
         <div class="row ">
             <div class="col-12">12</div>
             <div class="col-11">11</div>
@@ -209,6 +337,8 @@
         </div>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
 </body>
 
