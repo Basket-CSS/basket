@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basket CSS Framework</title>
+
+    <meta name="author" content="Omar Quazi">
+    <meta name="description" content="A simple, minimalistic CSS framework">
+    <link rel="stylesheet" href="dist/basket.min.css">
+
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 24px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(16px);
+            -ms-transform: translateX(16px);
+            transform: translateX(16px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        @-webkit-keyframes swinging {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            25% {
+                -webkit-transform: rotate(-5deg)
+            }
+
+            /* 50%{-webkit-transform: rotate(0deg)} */
+            75% {
+                -webkit-transform: rotate(5deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(0deg);
+            }
+        }
+
+        @keyframes swinging {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(-5deg)
+            }
+
+            /* 50%{transform: rotate(0deg)} */
+            75% {
+                transform: rotate(5deg)
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .swing-logo {
+            -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+            -webkit-animation: swinging 2.5s ease-in-out forwards;
+            animation: swinging 2.5s ease-in-out forwards;
+            animation-iteration-count: 1;
+        }
+
+        .hero img {
+            height: 5em;
+        }
+
+
+        .hero {
+            text-align: center;
+            padding-top: 15vh;
+        }
+        .darkmode-switch {
+            /* position: fixed; */
+            padding: 2em;
+            margin: 0 auto;
+            text-align: right;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="darkmode-switch">
+        Dark Mode Toggle
+        <label class="switch">
+            <input id="darkmode-toggler" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+    </div>
+    <div class="container">
+        <div class="row hero">
+            <div class="col-12 text-center">
+                <img src="imgs/basket-logo.png" id="logo" class="img-responsive swing-logo" alt="Basket Framework Logo">
+                <h1 class="h1 text-blue">Basket</h1>
+            </div>
+            <div class="col-12">
+                Yet again, another CSS framework.
+            </div>
+            <div class="col-12 text-muted" style="padding-top: 1em">
+                Underconstruction, come back later bro.
+            </div>
+            <div class="col-12" style="padding-top: 4em">
+                <a class="btn btn-lg btn-blue" href="examples.html">See Examples</a>
+            </div>
+            <div class="col-12" style="padding-top: 3em">
+                <a class="btn btn-dark" href="https://github.com/blacksector/basket">See Repo</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // retrieve the element
+        element = document.getElementById("logo");
+
+        // reset the transition by...
+        element.addEventListener("click", function (e) {
+            e.preventDefault;
+
+            // -> removing the class
+            element.classList.remove("swing-logo");
+
+            // -> triggering reflow /* The actual magic */
+            // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
+            // Oops! This won't work in strict mode. Thanks Felis Phasma!
+            // element.offsetWidth = element.offsetWidth;
+            // Do this instead:
+            void element.offsetWidth;
+
+            // -> and re-adding the class
+            element.classList.add("swing-logo");
+        }, false);
+
+        // For darkmode:
+        let toggler = document.getElementById("darkmode-toggler")
+        toggler.onchange = () => {
+            console.log(toggler.checked);
+            if (toggler.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        }
+        
+    </script>
+
+</body>
+
+</html>

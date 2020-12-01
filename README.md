@@ -1,9 +1,7 @@
 <p align="center"><img src="docs/imgs/logo-hero.png" style="color: pink;" /></p>
 
-> Yes, another CSS framework.
-
-> A simple, minimalistic CSS framework
-
+> Yes, another CSS framework. <br />
+> A simple, minimalistic CSS framework <br />
 > Oh, and it comes with built-in dark mode.
 
 ## Usage
