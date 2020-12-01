@@ -29,3 +29,14 @@
     flex: 0 0 100% / $columns * $i
   .col-offset-#{$i}
     margin-left: 100% / $columns * $i
+
+// Larger than mobile screen
+@media (min-width: 42.0rem) // Safari desktop has a bug using `rem`, but Safari mobile works
+  .row
+    flex-direction: row
+    margin-left: -1.0rem
+    width: calc(100% + 2.0rem)
+
+    .col
+      margin-bottom: inherit
+      padding: 0 1.0rem

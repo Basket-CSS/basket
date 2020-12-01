@@ -263,6 +263,21 @@
   margin-left: 100%;
 }
 
+@media (min-width: 42rem) {
+  .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: -1.0rem;
+    width: calc(100% + 2.0rem);
+  }
+  .row .col {
+    margin-bottom: inherit;
+    padding: 0 1.0rem;
+  }
+}
+
 /* I like my header texts with a smaller font weight:  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
