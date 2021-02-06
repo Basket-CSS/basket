@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
-    "banner": "banner-cli dist/basket.css",
+    "banner": "banner-cli dist/basket.css && banner-cli dist/basket.min.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && run-s sass autoprefixer banner",
     "sass": "node-sass --output-style expanded src/basket.sass dist/basket.css && node-sass --output-style compressed src/basket.sass dist/basket.min.css",

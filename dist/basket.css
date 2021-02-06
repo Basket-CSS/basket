@@ -2,7 +2,7 @@
   * Basket v1.0.0
   * https://getbasket.co
   *
-  * Copyright (c) 2020 Omar Quazi
+  * Copyright (c) 2021 Omar Quazi
   * Licensed under the MIT license
  */
 
@@ -119,7 +119,6 @@
  *  will be used for mobile screens */
 .container {
   margin: 0 auto;
-  width: 100vw;
 }
 
 .row {
@@ -417,6 +416,13 @@ h6 {
 
 a {
   color: var(--text-color);
+}
+
+p {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  overflow-wrap: anywhere;
 }
 
 .btn {
@@ -987,6 +993,141 @@ hr {
 
 .hero .hero-body {
   padding: 0.5rem;
+}
+
+code {
+  margin: 0 0.3rem;
+  padding: 0.1rem 0.5rem;
+  background: hsl(0, 0%, var(--lightness-hsl));
+  color: var(--text-color);
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+
+pre {
+  background: hsl(0, 0%, var(--lightness-hsl));
+  overflow-y: hidden;
+}
+
+pre .pre-blue {
+  border-left: 0.3rem solid var(--blue);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 0.9rem 1.5rem;
+  white-space: pre;
+}
+
+pre .pre-green {
+  border-left: 0.3rem solid var(--green);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 0.9rem 1.5rem;
+  white-space: pre;
+}
+
+pre .pre-indigo {
+  border-left: 0.3rem solid var(--indigo);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 0.9rem 1.5rem;
+  white-space: pre;
+}
+
+pre .pre-orange {
+  border-left: 0.3rem solid var(--orange);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 0.9rem 1.5rem;
+  white-space: pre;
+}
+
+pre .pre-pink {
+  border-left: 0.3rem solid var(--pink);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 0.9rem 1.5rem;
+  white-space: pre;
+}
+
+pre .pre-purple {
+  border-left: 0.3rem solid var(--purple);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 0.9rem 1.5rem;
+  white-space: pre;
+}
+
+pre .pre-red {
+  border-left: 0.3rem solid var(--red);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 0.9rem 1.5rem;
+  white-space: pre;
+}
+
+pre .pre-teal {
+  border-left: 0.3rem solid var(--teal);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 0.9rem 1.5rem;
+  white-space: pre;
+}
+
+pre .pre-yellow {
+  border-left: 0.3rem solid var(--yellow);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 0.9rem 1.5rem;
+  white-space: pre;
+}
+
+pre .pre-dark {
+  border-left: 0.3rem solid var(--dark);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 0.9rem 1.5rem;
+  white-space: pre;
+}
+
+pre .pre-grey {
+  border-left: 0.3rem solid var(--grey);
+}
+
+pre > code {
+  border-radius: 0;
+  display: block;
+  padding: 0.9rem 1.5rem;
+  white-space: pre;
 }
 
 form {
