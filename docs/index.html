@@ -199,16 +199,6 @@
             element.classList.add("swing-logo");
         }, false);
 
-        // For darkmode:
-        let toggler = document.getElementById("darkmode-toggler")
-        toggler.onchange = () => {
-            console.log(toggler.checked);
-            if (toggler.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-            }
-        }
         
         var gitHubPath = 'blacksector/basket';  // example repo
         var url = 'https://api.github.com/repos/' + gitHubPath + '/tags';
@@ -223,6 +213,8 @@
 
 
     </script>
+
+    <script src="dist/basket.min.js"></script>
 
 </body>
 
