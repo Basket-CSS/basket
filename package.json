@@ -9,12 +9,13 @@
   "main": "index.js",
   "scripts": {
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
-    "banner": "banner-cli dist/basket.css && banner-cli dist/basket.min.css",
+    "banner": "banner-cli dist/*.css && banner-cli dist/*.js ",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist && run-s sass autoprefixer banner",
+    "build": "rimraf dist && run-s sass autoprefixer minifyjs banner",
     "sass": "node-sass --output-style expanded src/basket.sass dist/basket.css && node-sass --output-style compressed src/basket.sass dist/basket.min.css",
+    "minifyjs": "copyfiles -u 1 src/*.js dist && uglifyjs dist/basket.js --compress --mangle --warn --output dist/basket.min.js",
     "reinstall": "rimraf node_modules && npm cache clean && npm install",
-    "copy": "rimraf docs/dist && copyfiles -u 1 dist/*.css docs/dist"
+    "copy": "rimraf docs/dist && copyfiles -u 1 dist/* docs/dist"
   },
   "keywords": [
     "css",
@@ -39,7 +40,8 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.1.10",
     "postcss-cli": "^8.3.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "uglify-js": "^3.12.7"
   },
   "browserslist": [
     "last 3 versions"
