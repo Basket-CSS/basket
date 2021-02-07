@@ -429,7 +429,7 @@ p {
   padding: 1rem 1.5rem;
   color: #ffffff;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 400;
   border-radius: 5px;
   border-color: transparent;
   text-decoration: none;
@@ -441,7 +441,7 @@ p {
 
 .btn-lg {
   padding: 1rem 2.5rem;
-  font-size: 1.1rem;
+  font-size: 1.4em;
 }
 
 .btn-block {
@@ -941,10 +941,11 @@ hr {
 .blockquote {
   margin-left: 0;
   margin-right: 0;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 2rem;
   background: hsl(0, 0%, var(--lightness-hsl));
   color: var(--text-color);
   overflow-x: auto;
+  line-height: 1;
 }
 
 .blockquote *:last-child {

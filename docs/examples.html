@@ -84,6 +84,15 @@
             margin: 0 auto;
             text-align: right;
         }
+
+        .colors > div {
+            float: left;
+            padding: 1.8em 1.4em;
+            margin-bottom: 1em;
+        }
+        .colors-title {
+            clear: both;
+        }
     </style>
 
 </head>
@@ -111,12 +120,11 @@
                 <h3>Getting Started</h3>
                 <p>Let's start with how to get the latest version of the framework:</p>
                 <p class="lead text-bold">1. Downloading a zip</p>
-                <button class="btn btn-blue" type=""
-                    href="https://github.com/blacksector/basket/releases/latest">Download Here</button>
+                <a class="btn btn-blue" href="https://github.com/blacksector/basket/releases/latest">Download Here</a>
 
                 <p class="lead text-bold">2. From CDN</p>
                 
-                <blockquote class="blockquote blockquote-blue" style="line-height: 1; padding-bottom: 2em">
+                <blockquote class="blockquote blockquote-blue">
                     <p>
                         &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/blacksector/basket@latest/dist/basket.min.css"&gt;
                     </p>
@@ -155,21 +163,23 @@
                     simple drop-in solution.
                 </p>
                 <p class="lead text-bold">Display</p>
-                <blockquote class="blockquote blockquote-blue" style="line-height: 0; padding-bottom: 2em">
-                    <p class="display-1">Display 1</p>
-                    <p class="display-2">Display 2</p>
-                    <p class="display-3">Display 3</p>
-                    <p class="display-4">Display 4</p>
-                </blockquote>
+                <p class="display-1">Display 1</p>
+                <p class="display-2">Display 2</p>
+                <p class="display-3">Display 3</p>
+                <p class="display-4">Display 4</p>
+
                 <p class="lead text-bold">Headings</p>
-                <blockquote class="blockquote blockquote-blue" style="line-height: 1; padding-bottom: 2em">
-                    <h1>Heading h1</h1>
-                    <h2>Heading h2</h2>
-                    <h3>Heading h3</h3>
-                    <h4>Heading h4</h4>
-                    <h5>Heading h5</h5>
-                    <h6>Heading h6</h6>
-                </blockquote>
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+
+                <p class="lead text-bold">Regular Text</p>
+                <p class="lead">Leading paragraph text</p>
+                <p>this is a normal paragraph text</p>
+
             </div>
         </div>
         <div class="row">
@@ -179,9 +189,103 @@
                 <p>
                     We used different colour pallets based on if the site is in light mode vs dark mode.
                 </p>
-                <p class="lead text-bold">Light Mode</p>
+                <p class="colors-title lead text-bold">Light Mode</p>
+                <div class="colors text-light">
+                    <div style="background-color: #007aff;">
+                        #007aff
+                        <br />
+                        <small>blue</small>
+                    </div>
+                    <div style="background-color: #34c759;">
+                        #34c759
+                        <br />
+                        <small>green</small>
+                    </div>
+                    <div style="background-color: #5856d6;">
+                        #5856d6
+                        <br />
+                        <small>indigo</small>
+                    </div>
+                    <div style="background-color: #ff9500;">
+                        #ff9500
+                        <br />
+                        <small>orange</small>
+                    </div>
+                    <div style="background-color: #ff2d55;">
+                        #ff2d55
+                        <br />
+                        <small>pink</small>
+                    </div>
+                    <div style="background-color: #af52dE;">
+                        #af52dE
+                        <br />
+                        <small>purple</small>
+                    </div>
+                    <div style="background-color: #ff3b30;">
+                        #ff3b30
+                        <br />
+                        <small>red</small>
+                    </div>
+                    <div style="background-color: #5ac8fa;">
+                        #5ac8fa
+                        <br />
+                        <small>teal</small>
+                    </div>
+                    <div style="background-color: #ffcc00;">
+                        #ffcc00
+                        <br />
+                        <small>yellow</small>
+                    </div>
+                </div>
 
-                <p class="lead text-bold">Dark Mode</p>
+                <p class="colors-title lead text-bold">Dark Mode</p>
+                <div class="colors text-light">
+                    <div style="background-color: #0a84ff;">
+                        #0a84ff
+                        <br />
+                        <small>blue</small>
+                    </div>
+                    <div style="background-color: #30d158;">
+                        #30d158
+                        <br />
+                        <small>green</small>
+                    </div>
+                    <div style="background-color: #5856d6;">
+                        #5856d6
+                        <br />
+                        <small>indigo</small>
+                    </div>
+                    <div style="background-color: #ff9f0a;">
+                        #ff9f0a
+                        <br />
+                        <small>orange</small>
+                    </div>
+                    <div style="background-color: #ff375f;">
+                        #ff375f
+                        <br />
+                        <small>pink</small>
+                    </div>
+                    <div style="background-color: #bf5af2;">
+                        #bf5af2
+                        <br />
+                        <small>purple</small>
+                    </div>
+                    <div style="background-color: #ff453a;">
+                        #ff453a
+                        <br />
+                        <small>red</small>
+                    </div>
+                    <div style="background-color: #64d2ff;">
+                        #64d2ff
+                        <br />
+                        <small>teal</small>
+                    </div>
+                    <div style="background-color: #ffd60a;">
+                        #ffd60a
+                        <br />
+                        <small>yellow</small>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -223,12 +327,16 @@
                     &lt;/blockquote&gt;
                 </blockquote>
 
+                <br />
+
+                <a id="grid"></a>
+                <h3>Grid</h3>
             </div>
         </div>
     </div>
 
     <div id="grid-sample" class="container">
-        <div class="row ">
+        <div class="row">
             <div class="col-12">12</div>
             <div class="col-11">11</div>
             <div class="col-1">1</div>
@@ -251,25 +359,9 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-8 col-offset-2">
-                <blockquote class="blockquote blockquote-blue">Sample!</blockquote>
-                <p class="display-1">Display 1</p>
-                <p class="display-2">Display 2</p>
-                <p class="display-3">Display 3</p>
-                <p class="display-4">Display 4</p>
-                <h1>Heading 1</h1>
-                <h2>H2</h2>
-                <h3>H3</h3>
-                <h4>H4</h4>
-                <h5>H5</h5>
-                <h6>H6</h6>
-                <p class="lead">Leading paragraph text</p>
-                <p>this is a normal paragraph text</p>
-                <p>Responsive image (10000x1000):</p>
-                <div class="img-responsive">
-                    <img src="https://placehold.it/10000x1000" alt="Place holder image">
-                </div>
-                <br>
+            <div class="col-10 col-offset-1">
+                <a id="button"></a>
+                <h3>Button</h3>
                 <p>For larger buttons use <code>btn-lg</code></p>
                 <p>For full width buttons use <code>btn-block</code></p>
                 <p>Normal Buttons</p>
@@ -294,12 +386,16 @@
                 <button class="btn btn-rounded btn-teal">Teal</button>
                 <button class="btn btn-rounded btn-yellow">Yellow</button>
                 <button class="btn btn-rounded btn-dark">Dark</button>
-
                 <p>Disabled Buttons</p>
                 <button class="btn btn-blue" disabled>Dark</button>
                 <button class="btn btn-rounded btn-dark" disabled>Dark</button>
+                <p>Other Buttons</p>
+                <button class="btn btn-blue btn-lg">Large</button>
+                <br /> <br />
+                <button class="btn btn-blue btn-block">Block</button>
                 <br />
-                <p>Navbar</p>
+                <a id="navbar"></a>
+                <h3>Navbar</h3>
                 <div class="navbar navbar-blue">
                     <a href="#" class="navbar-brand">Brand</a>
                     <a class="navbar-collapse">&#9776;</a>
@@ -410,6 +506,8 @@
                     </div>
                 </div>
                 <br>
+                <a id="form"></a>
+                <h3>Form</h3>
                 <form>
                     <label for="name">Name</label>
                     <input type="text" name="name" placeholder="John Doe" />
@@ -421,10 +519,8 @@
                     <button class="btn btn-primary">Submit Form</button>
                 </form>
                 <br>
-                <p>Divider</p>
-                <hr>
-                <br>
-                <p>Lists</p>
+                <a id="list"></a>
+                <h3>Lists</h3>
                 <ul>
                     <li> One.
                     <li> Two.
@@ -447,6 +543,19 @@
                     <li> Four. This is the last item in this list.
                         Let us terminate the list now without making any more fuss about it.
                 </ol>
+                <br />
+                <a id="images"></a>
+                <h3>Images</h3>
+                <p>Responsive image (10000x1000):</p>
+                <div class="img-responsive">
+                    <img src="https://placehold.it/10000x1000" alt="Place holder image">
+                </div>
+                <br>
+                <a id="utils"></a>
+                <h3>Utils</h3>
+                <p>Divider</p>
+                <hr>
+                <br /><br />
             </div>
         </div>
 

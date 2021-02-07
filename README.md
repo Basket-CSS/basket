@@ -1,7 +1,7 @@
 <p align="center"><img src="docs/imgs/logo-hero.png" style="color: pink;" /></p>
 
 > Yes, another CSS framework. <br />
-> A simple, minimalistic CSS framework <br />
+> Super minimalistic. <br />
 > Oh, and it comes with built-in dark mode.
 
 ## Usage
@@ -23,11 +23,11 @@ Things that are implemented fully so far:
 - [ ] Lists
 - [ ] Forms
 - [ ] Tables
-- [ ] Grids
+- [x] Grids
 - [ ] Code
 - [x] Utilities
 - [ ] Tooltips
 - [ ] Alert
-- [ ] Navbar
+- [x] Navbar
    - [ ] Have a "banner" feature
 - [x] Hero
