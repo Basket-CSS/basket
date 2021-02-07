@@ -831,6 +831,38 @@ hr {
   background: var(--grey-hover);
 }
 
+.navbar a.navbar-collapse {
+  display: none;
+}
+
+.navbar a.navbar-collapse:hover {
+  cursor: pointer;
+}
+
+.navbar .navbar-items.collapsed {
+  display: block;
+}
+
+@media (max-width: 42rem) {
+  .navbar .navbar-items {
+    display: none;
+  }
+  .navbar .navbar-items .collapsed {
+    display: block;
+  }
+  .navbar .navbar-items a {
+    width: 100%;
+    text-align: left;
+  }
+  .navbar a.navbar-brand {
+    display: block;
+  }
+  .navbar a.navbar-collapse {
+    display: block;
+    float: right;
+  }
+}
+
 .dropdown {
   display: block;
 }

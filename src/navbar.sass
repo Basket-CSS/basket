@@ -50,6 +50,30 @@
       &.active, &:hover
         background: var(--#{$variation}-hover)
 
+.navbar a.navbar-collapse
+  display: none
+  &:hover
+    cursor: pointer
+
+.navbar .navbar-items.collapsed
+  display: block
+
+@media (max-width: 42.0rem)
+  .navbar .navbar-items
+    display: none
+    .collapsed
+      display: block
+    a
+      width: 100%
+      text-align: left
+  
+  .navbar a.navbar-brand
+    display: block
+
+  .navbar a.navbar-collapse
+    display: block
+    float: right
+
 .dropdown
   display: block
 
