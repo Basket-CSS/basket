@@ -8,7 +8,9 @@
 
 window.addEventListener('load', (event) => {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('data-theme', 'dark');
+        if (document.documentElement.getAttribute('data-theme') === null) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
     }
 
     document.querySelectorAll('.navbar-collapse').forEach(el => {
