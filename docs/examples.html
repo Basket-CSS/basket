@@ -18,6 +18,72 @@
             background: var(--dark);
             color: var(--bg-color);
         }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 24px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(16px);
+            -ms-transform: translateX(16px);
+            transform: translateX(16px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .darkmode-switch {
+            /* position: fixed; */
+            padding: 2em;
+            margin: 0 auto;
+            text-align: right;
+        }
     </style>
 
 </head>
@@ -25,6 +91,13 @@
 <body>
     <div class="hero hero-lg bg-grey align-items-center text-center">
         <div class="hero-body">
+            <div class="darkmode-switch">
+                Dark Mode Toggle
+                <label class="switch">
+                    <input class="darkmode-toggler" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
             <h1>Basket Examples</h1>
             <p class="lead">Done looking around for a CSS framework? Let's take a look at what Basket can do for you.
             </p>
