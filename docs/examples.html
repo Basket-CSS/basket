@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -88,7 +88,12 @@
 
         .colors > div {
             float: left;
-            padding: 1.8em 1.4em;
+            width: 125px;
+            height: 125px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             margin-bottom: 1em;
         }
         .colors-title {
@@ -519,7 +524,76 @@
                     <input type="checkbox" name="check" />
                     <button class="btn btn-primary">Submit Form</button>
                 </form>
-                <br>
+                <br />
+                <a id="table"></a>
+                <h3>Tables</h3>
+                <p>Tables are entirely "optional" just like Bootstrap, meaning you must apply the <code>.table</code> class in order for it to work, here is an example:</p>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Job Title</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Omar</td>
+                        <td>Quazi</td>
+                        <td>Software Developer</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>Designer</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>Use the <code>.table-striped</code> class to created a striped table</p>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Job Title</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Omar</td>
+                        <td>Quazi</td>
+                        <td>Software Developer</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>Designer</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>Of course, there are colour variants as well! Here is an indigo table using the <code>.table-indigo</code> class</p>
+                <table class="table table-indigo">
+                    <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Job Title</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Omar</td>
+                        <td>Quazi</td>
+                        <td>Software Developer</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>Designer</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br />
                 <a id="list"></a>
                 <h3>Lists</h3>
                 <ul>

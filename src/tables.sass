@@ -1,0 +1,36 @@
+.table
+  display: table
+  width: 100%
+  border-spacing: 0
+  border-collapse: collapse
+  overflow-x: initial
+  text-align: left
+
+  td, th
+    border-bottom: 1px solid var(--dark)
+    padding: 1rem 1.2rem
+
+    &:last-child
+      padding-right: 0
+
+.table-striped
+  tbody
+    tr:nth-of-type(odd)
+      background: hsl(0, 0%, var(--lightness-hsl))
+
+
+@each $variation in $variations
+  .table-#{$variation}
+    background: var(--#{$variation})
+    color: white
+    td, th
+      border-bottom: 1px solid var(--#{$variation}-hover)
+
+
+@media (max-width: 42.0rem)
+
+  .table
+    display: block
+    overflow-x: auto
+    
+    

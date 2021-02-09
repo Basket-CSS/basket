@@ -22,7 +22,7 @@ Things that are implemented fully so far:
 - [ ] Dropdowns - ?
 - [ ] Lists
 - [ ] Forms
-- [ ] Tables
+- [x] Tables
 - [x] Grids
 - [ ] Code
 - [x] Utilities
