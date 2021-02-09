@@ -7,7 +7,14 @@
 ## Usage
 
 ```html
+<!-- Normalize isn't required but nice to have -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/blacksector/basket@latest/dist/basket.min.css">
+
+<!-- JS is required for navigation collapse to work -->
+<script src="https://cdn.jsdelivr.net/gh/blacksector/basket@latest/dist/basket.min.js"></script>
+
 ```
 
 ## Implementation
@@ -21,7 +28,7 @@ Things that are implemented fully so far:
 - [ ] Cards - ?
 - [ ] Dropdowns - ?
 - [ ] Lists
-- [ ] Forms
+- [x] Forms
 - [x] Tables
 - [x] Grids
 - [ ] Code

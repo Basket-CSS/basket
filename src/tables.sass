@@ -7,7 +7,7 @@
   text-align: left
 
   td, th
-    border-bottom: 1px solid var(--dark)
+    border-bottom: 1px solid hsl(0, 0%, var(--lightness-hsl))
     padding: 1rem 1.2rem
 
     &:last-child
@@ -24,10 +24,17 @@
     color: white
     td, th
       border-bottom: 1px solid var(--#{$variation}-hover)
+    &.table-bordered
+      td, th
+        border: 1px solid var(--#{$variation}-hover) !important
 
 .table-borderless
   td, th
     border-bottom: 0
+
+.table-bordered
+  td, th
+    border: 1px solid hsl(0, 0%, var(--lightness-hsl))
 
 @media (max-width: 42.0rem)
 

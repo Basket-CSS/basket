@@ -1239,7 +1239,7 @@ textarea[type=text] {
 }
 
 .table td, .table th {
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 1px solid hsl(0, 0%, var(--lightness-hsl));
   padding: 1rem 1.2rem;
 }
 
@@ -1260,6 +1260,10 @@ textarea[type=text] {
   border-bottom: 1px solid var(--blue-hover);
 }
 
+.table-blue.table-bordered td, .table-blue.table-bordered th {
+  border: 1px solid var(--blue-hover) !important;
+}
+
 .table-green {
   background: var(--green);
   color: white;
@@ -1267,6 +1271,10 @@ textarea[type=text] {
 
 .table-green td, .table-green th {
   border-bottom: 1px solid var(--green-hover);
+}
+
+.table-green.table-bordered td, .table-green.table-bordered th {
+  border: 1px solid var(--green-hover) !important;
 }
 
 .table-indigo {
@@ -1278,6 +1286,10 @@ textarea[type=text] {
   border-bottom: 1px solid var(--indigo-hover);
 }
 
+.table-indigo.table-bordered td, .table-indigo.table-bordered th {
+  border: 1px solid var(--indigo-hover) !important;
+}
+
 .table-orange {
   background: var(--orange);
   color: white;
@@ -1285,6 +1297,10 @@ textarea[type=text] {
 
 .table-orange td, .table-orange th {
   border-bottom: 1px solid var(--orange-hover);
+}
+
+.table-orange.table-bordered td, .table-orange.table-bordered th {
+  border: 1px solid var(--orange-hover) !important;
 }
 
 .table-pink {
@@ -1296,6 +1312,10 @@ textarea[type=text] {
   border-bottom: 1px solid var(--pink-hover);
 }
 
+.table-pink.table-bordered td, .table-pink.table-bordered th {
+  border: 1px solid var(--pink-hover) !important;
+}
+
 .table-purple {
   background: var(--purple);
   color: white;
@@ -1303,6 +1323,10 @@ textarea[type=text] {
 
 .table-purple td, .table-purple th {
   border-bottom: 1px solid var(--purple-hover);
+}
+
+.table-purple.table-bordered td, .table-purple.table-bordered th {
+  border: 1px solid var(--purple-hover) !important;
 }
 
 .table-red {
@@ -1314,6 +1338,10 @@ textarea[type=text] {
   border-bottom: 1px solid var(--red-hover);
 }
 
+.table-red.table-bordered td, .table-red.table-bordered th {
+  border: 1px solid var(--red-hover) !important;
+}
+
 .table-teal {
   background: var(--teal);
   color: white;
@@ -1321,6 +1349,10 @@ textarea[type=text] {
 
 .table-teal td, .table-teal th {
   border-bottom: 1px solid var(--teal-hover);
+}
+
+.table-teal.table-bordered td, .table-teal.table-bordered th {
+  border: 1px solid var(--teal-hover) !important;
 }
 
 .table-yellow {
@@ -1332,6 +1364,10 @@ textarea[type=text] {
   border-bottom: 1px solid var(--yellow-hover);
 }
 
+.table-yellow.table-bordered td, .table-yellow.table-bordered th {
+  border: 1px solid var(--yellow-hover) !important;
+}
+
 .table-dark {
   background: var(--dark);
   color: white;
@@ -1339,6 +1375,10 @@ textarea[type=text] {
 
 .table-dark td, .table-dark th {
   border-bottom: 1px solid var(--dark-hover);
+}
+
+.table-dark.table-bordered td, .table-dark.table-bordered th {
+  border: 1px solid var(--dark-hover) !important;
 }
 
 .table-grey {
@@ -1350,8 +1390,16 @@ textarea[type=text] {
   border-bottom: 1px solid var(--grey-hover);
 }
 
+.table-grey.table-bordered td, .table-grey.table-bordered th {
+  border: 1px solid var(--grey-hover) !important;
+}
+
 .table-borderless td, .table-borderless th {
   border-bottom: 0;
+}
+
+.table-bordered td, .table-bordered th {
+  border: 1px solid hsl(0, 0%, var(--lightness-hsl));
 }
 
 @media (max-width: 42rem) {
