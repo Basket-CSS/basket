@@ -1,6 +1,10 @@
 form
   width: 100%
 
+label
+  cursor: pointer
+
+
 input
   &[type=email], &[type=file], &[type=number], &[type=password], &[type=search], &[type=tel], &[type=text], &[type=url]
     width: 100%
@@ -8,8 +12,55 @@ input
     margin-bottom: 1rem
     box-sizing: border-box
     transition: all .2s ease
-    border: 1px solid #141b24
-    border-radius: 2px
+    border: 0
+    border-radius: 5px
+    background: var(--grey)
+    color: var(--text-color)
+
+  &[type=checkbox], &[type=radio]
+    border: 0.5px solid black !important
+  
+  &[type=range]
+    -webkit-appearance: none
+    width: 100%
+    outline: none
+    background: var(--grey)
+    border-radius: 5px
+    padding: 0.5rem 1rem 0.5rem 1rem
+    margin: 0.9rem 0rem
+
+  &[type=range]::-webkit-slider-thumb
+    -webkit-appearance: none
+    appearance: none
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background: var(--text-color)
+    cursor: pointer
+  
+  &[type=range]::-moz-range-thumb
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background: var(--text-color)
+    cursor: pointer
+
+  padding: 0.9rem 1rem 0.9rem 2rem
+
+.slider-small
+  &[type=range]
+    height: 1px
+
+// Custom range slider colors!
+@each $variation in $variations
+  .slider-#{$variation}
+    &[type=range]::-webkit-slider-thumb
+      background: var(--#{$variation})
+    
+    &[type=range]::-moz-range-thumb
+      background: var(--#{$variation})
+
+
 
 select
   width: 100%
@@ -17,8 +68,13 @@ select
   margin-bottom: 1rem
   box-sizing: border-box
   transition: all .2s ease
-  border: 1px solid #141b24
-  border-radius: 2px
+  border: 0
+  border-radius: 5px
+  background: var(--grey)
+  color: var(--text-color)
+
+  padding: 0.9rem 1rem 0.9rem 2rem
+  margin: 1.2rem 0
 
 textarea
   width: 100%
@@ -26,8 +82,15 @@ textarea
   margin-bottom: 1rem
   box-sizing: border-box
   transition: all .2s ease
-  border: 1px solid #141b24
-  border-radius: 2px
+  border: 0
+  border-radius: 5px
+  background: var(--grey)
+  color: var(--text-color)
+  resize: vertical
+  min-height: 12rem
+  margin: 0
+
+  padding: 0.9rem 1rem 0.9rem 2rem
 
   &[type=text]
     width: 100%
@@ -35,52 +98,39 @@ textarea
     margin-bottom: 1rem
     box-sizing: border-box
     transition: all .2s ease
-    border: 1px solid #141b24
-    border-radius: 2px
+    border: 0
+    border-radius: 5px
+    background: var(--grey)
+    color: var(--text-color)
 
-input
-  &[type=email]:focus, &[type=file]:focus, &[type=number]:focus, &[type=password]:focus, &[type=search]:focus, &[type=tel]:focus, &[type=text]:focus, &[type=url]:focus
-    border-color: #141b24
-    transition: all 0.2s ease
 
-select:focus
-  border-color: #141b24
-  transition: all 0.2s ease
+.form-modern
+  input
+    &[type=email], &[type=file], &[type=number], &[type=password], &[type=search], &[type=tel], &[type=text], &[type=url]
+      background: var(--bg-color)
+      border-bottom: 1px solid hsl(0, 0%, var(--lightness-hsl))
+      border-radius: 0
+    
+    &:focus
+      border-bottom: 1px solid var(--dark)
 
-textarea
-  &:focus, &[type=text]:focus
-    border-color: #141b24
-    transition: all 0.2s ease
+    &[type=range]
+      height: 1px
+    
+    &[type=range]:focus
+      border-bottom: 0
 
-input
-  &[type=checkbox], &[type=radio]
-    border: 0.5px solid black !important
+  select
+    background: var(--bg-color)
+    border-bottom: 1px solid hsl(0, 0%, var(--lightness-hsl))
+    border-radius: 0
+  
+  textarea
+    background: var(--bg-color)
+    border-bottom: 1px solid hsl(0, 0%, var(--lightness-hsl))
+    border-radius: 0
+    min-height: 5rem
 
-  padding: 0.9rem 1rem 0.9rem 2rem
+    &:focus
+      border-bottom: 1px solid var(--dark)
 
-textarea
-  padding: 0.9rem 1rem 0.9rem 2rem
-
-select
-  background: #fff
-  padding: .9rem .5rem
-  margin: 1.2rem 0
-
-textarea
-  resize: vertical
-  min-height: 12rem
-  margin: 0
-
-.input-field span:before
-  cursor: pointer
-  position: relative
-  font-family: fontawesome
-  top: 3rem
-  left: .6rem
-  color: #212121
-
-.text-area-field span:before
-  top: 1.8rem
-
-label
-  cursor: pointer

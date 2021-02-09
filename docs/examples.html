@@ -518,11 +518,62 @@
                     <label for="name">Name</label>
                     <input type="text" name="name" placeholder="John Doe" />
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="example@example.com" />
+                    <input type="email" name="email" placeholder="example@getbasket.co" />
                     <label for="password">Password</label>
                     <input type="password" name="password" placeholder="Password" />
+                    <label for="select">Select</label>
+                    <select>
+                        <option disabled selected>Selection menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <label for="rangeSlider">Example range</label>
+                    <br>
+                    <input type="range" id="rangeSlider">
+                    <br>
+                    <label for="rangeSlider2">Colourful range slider <code>.slider-*</code></label>
+                    <br>
+                    <input type="range" class="slider-pink" id="rangeSlider2">
+                    <br>
+                    <label for="rangeSlider3">Here's a smaller slider using the <code>.slider-small</code> class.</label>
+                    <br>
+                    <input type="range" class="slider-green slider-small" id="rangeSlider3">
+                    <br>
+                    <label for="textarea">Textarea</label>
+                    <textarea name="textarea" cols="30" rows="10" placeholder="Type a comment here :)"></textarea>
+                    <label for="check">Remember me</label>
                     <input type="checkbox" name="check" />
-                    <button class="btn btn-primary">Submit Form</button>
+                    <button class="btn btn-blue" style="float: right;">Submit Form</button>
+                </form>
+                <p>Here is an example with <code>.form-modern</code></p>
+                <form class="form-modern">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="John Doe" />
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="example@getbasket.co" />
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password" />
+                    <label for="select">Select</label>
+                    <select>
+                        <option disabled selected>Selection menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <label for="rangeSlider4">Example range</label>
+                    <br>
+                    <input type="range" id="rangeSlider4">
+                    <br>
+                    <label for="rangeSlider5">Colourful range slider <code>.slider-*</code></label>
+                    <br>
+                    <input type="range" class="slider-indigo" id="rangeSlider5">
+                    <br>
+                    <label for="textarea">Textarea</label>
+                    <textarea name="textarea" cols="30" rows="5" placeholder="Type a comment here :)"></textarea>
+                    <label for="check">Remember me</label>
+                    <input type="checkbox" name="check" />
+                    <button class="btn btn-blue" style="float: right;">Submit Form</button>
                 </form>
                 <br />
                 <a id="table"></a>
@@ -551,6 +602,28 @@
                 </table>
                 <p>Use the <code>.table-striped</code> class to created a striped table</p>
                 <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Job Title</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Omar</td>
+                        <td>Quazi</td>
+                        <td>Software Developer</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>Designer</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>Here is a table without borders, in case you like that using the <code>.table-borderless</code> class! The <code>.table-striped</code> has been added to make it a little more readable.</p>
+                <table class="table table-borderless table-striped">
                     <thead>
                     <tr>
                         <th>First Name</th>
