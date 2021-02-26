@@ -43,6 +43,7 @@
   display: inline-flex
   opacity: 1
 
+
 @each $variation in $variations
   .navbar-#{$variation}
     background: var(--#{$variation})
@@ -73,6 +74,10 @@
   .navbar a.navbar-collapse
     display: block
     float: right
+  
+  .navbar-right
+    float: unset
+    padding: 0
 
 .dropdown
   display: block

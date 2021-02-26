@@ -1,9 +1,8 @@
 .card
-  box-shadow: 0
-  transition: 0.3s
   width: 100%
   margin: auto auto
   text-align: center
+  border: 0.5rem var(--hover-color)
 
   .card-body
     padding: 4rem 2rem
@@ -13,8 +12,7 @@
       width: 100%
 
 .card-hover
-  transition: 0.3s
 
   &:hover
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 0px 10px 0px var(--hover-color)
     transform: translateY(-2px)

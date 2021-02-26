@@ -11,39 +11,6 @@
 .img-rounded
   border-radius: 50%
 
-/* CSS for profile */
-
-.profile
-  transition: 0.4s ease-in-out
-  display: block
-
-  &:hover
-    -webkit-box-shadow: 5px 15px 50px -25px var(--hover-color)
-    -moz-box-shadow: 5px 15px 50px -25px var(--hover-color)
-    box-shadow: 5px 15px 50px -25px var(--hover-color)
-
-  img
-    width: 55%
-
-  a
-    width: 100%
-    text-decoration: none
-
-.contact-option
-  justify-items: center
-  align-items: center
-  display: inline-flex
-  margin: 2%
-  min-width: 15%
-
-  img
-    margin: auto 4% auto auto
-    filter: var(--icon-invert)
-
-  text-decoration: none
-
-  &:hover
-    font-weight: bold
 
 /* Custom HR */
 
@@ -85,3 +52,30 @@ hr
 
 .align-content-center
   align-content: center
+
+@each $variation in $variations
+  .border-bottom-#{$variation} > li
+    border-bottom: 0.1em solid var(--#{$variation})
+    &:hover
+      border-bottom: 0.1em solid var(--#{$variation}-hover)
+  
+  .border-bottom-#{$variation}-hover > li
+    border-bottom: 0.1em solid transparent
+    &:hover
+      border-bottom: 0.1em solid var(--#{$variation}-hover)
+
+
+
+.mobile-only
+  display: none
+
+.desktop-only
+  display: block
+
+@media (max-width: 42.0rem)
+  .mobile-only
+    display: block
+
+  .desktop-only
+    display: none
+  

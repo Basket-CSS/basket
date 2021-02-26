@@ -316,14 +316,10 @@ button:disabled:hover {
 }
 
 .card {
-  -webkit-box-shadow: 0;
-          box-shadow: 0;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
   width: 100%;
   margin: auto auto;
   text-align: center;
+  border: 0.5rem var(--hover-color);
 }
 
 .card .card-body {
@@ -335,15 +331,9 @@ button:disabled:hover {
   width: 100%;
 }
 
-.card-hover {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .card-hover:hover {
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 0px var(--hover-color);
+          box-shadow: 0px 0px 10px 0px var(--hover-color);
   -webkit-transform: translateY(-2px);
       -ms-transform: translateY(-2px);
           transform: translateY(-2px);
@@ -733,6 +723,8 @@ textarea[type=text] {
  *  will be used for mobile screens */
 .container {
   margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
 }
 
 .row {
@@ -1152,6 +1144,10 @@ textarea[type=text] {
     display: block;
     float: right;
   }
+  .navbar-right {
+    float: unset;
+    padding: 0;
+  }
 }
 
 .dropdown {
@@ -1409,6 +1405,25 @@ textarea[type=text] {
   }
 }
 
+.tabs {
+  display: inline;
+  list-style: none;
+}
+
+.tabs li {
+  float: left;
+  margin: 0em 0.5em;
+  padding: 0em 0.2em;
+}
+
+.tabs li:first-child {
+  margin: 0;
+}
+
+.tabs li:hover {
+  cursor: pointer;
+}
+
 /* I like my header texts with a smaller font weight:  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
@@ -1581,51 +1596,6 @@ p {
   border-radius: 50%;
 }
 
-/* CSS for profile */
-.profile {
-  -webkit-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-  display: block;
-}
-
-.profile:hover {
-  -webkit-box-shadow: 5px 15px 50px -25px var(--hover-color);
-  box-shadow: 5px 15px 50px -25px var(--hover-color);
-}
-
-.profile img {
-  width: 55%;
-}
-
-.profile a {
-  width: 100%;
-  text-decoration: none;
-}
-
-.contact-option {
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 2%;
-  min-width: 15%;
-  text-decoration: none;
-}
-
-.contact-option img {
-  margin: auto 4% auto auto;
-  -webkit-filter: var(--icon-invert);
-          filter: var(--icon-invert);
-}
-
-.contact-option:hover {
-  font-weight: bold;
-}
-
 /* Custom HR */
 hr {
   margin-top: 1rem;
@@ -1678,6 +1648,199 @@ hr {
 .align-content-center {
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.border-bottom-blue > li {
+  border-bottom: 0.1em solid var(--blue);
+}
+
+.border-bottom-blue > li:hover {
+  border-bottom: 0.1em solid var(--blue-hover);
+}
+
+.border-bottom-blue-hover > li {
+  border-bottom: 0.1em solid transparent;
+}
+
+.border-bottom-blue-hover > li:hover {
+  border-bottom: 0.1em solid var(--blue-hover);
+}
+
+.border-bottom-green > li {
+  border-bottom: 0.1em solid var(--green);
+}
+
+.border-bottom-green > li:hover {
+  border-bottom: 0.1em solid var(--green-hover);
+}
+
+.border-bottom-green-hover > li {
+  border-bottom: 0.1em solid transparent;
+}
+
+.border-bottom-green-hover > li:hover {
+  border-bottom: 0.1em solid var(--green-hover);
+}
+
+.border-bottom-indigo > li {
+  border-bottom: 0.1em solid var(--indigo);
+}
+
+.border-bottom-indigo > li:hover {
+  border-bottom: 0.1em solid var(--indigo-hover);
+}
+
+.border-bottom-indigo-hover > li {
+  border-bottom: 0.1em solid transparent;
+}
+
+.border-bottom-indigo-hover > li:hover {
+  border-bottom: 0.1em solid var(--indigo-hover);
+}
+
+.border-bottom-orange > li {
+  border-bottom: 0.1em solid var(--orange);
+}
+
+.border-bottom-orange > li:hover {
+  border-bottom: 0.1em solid var(--orange-hover);
+}
+
+.border-bottom-orange-hover > li {
+  border-bottom: 0.1em solid transparent;
+}
+
+.border-bottom-orange-hover > li:hover {
+  border-bottom: 0.1em solid var(--orange-hover);
+}
+
+.border-bottom-pink > li {
+  border-bottom: 0.1em solid var(--pink);
+}
+
+.border-bottom-pink > li:hover {
+  border-bottom: 0.1em solid var(--pink-hover);
+}
+
+.border-bottom-pink-hover > li {
+  border-bottom: 0.1em solid transparent;
+}
+
+.border-bottom-pink-hover > li:hover {
+  border-bottom: 0.1em solid var(--pink-hover);
+}
+
+.border-bottom-purple > li {
+  border-bottom: 0.1em solid var(--purple);
+}
+
+.border-bottom-purple > li:hover {
+  border-bottom: 0.1em solid var(--purple-hover);
+}
+
+.border-bottom-purple-hover > li {
+  border-bottom: 0.1em solid transparent;
+}
+
+.border-bottom-purple-hover > li:hover {
+  border-bottom: 0.1em solid var(--purple-hover);
+}
+
+.border-bottom-red > li {
+  border-bottom: 0.1em solid var(--red);
+}
+
+.border-bottom-red > li:hover {
+  border-bottom: 0.1em solid var(--red-hover);
+}
+
+.border-bottom-red-hover > li {
+  border-bottom: 0.1em solid transparent;
+}
+
+.border-bottom-red-hover > li:hover {
+  border-bottom: 0.1em solid var(--red-hover);
+}
+
+.border-bottom-teal > li {
+  border-bottom: 0.1em solid var(--teal);
+}
+
+.border-bottom-teal > li:hover {
+  border-bottom: 0.1em solid var(--teal-hover);
+}
+
+.border-bottom-teal-hover > li {
+  border-bottom: 0.1em solid transparent;
+}
+
+.border-bottom-teal-hover > li:hover {
+  border-bottom: 0.1em solid var(--teal-hover);
+}
+
+.border-bottom-yellow > li {
+  border-bottom: 0.1em solid var(--yellow);
+}
+
+.border-bottom-yellow > li:hover {
+  border-bottom: 0.1em solid var(--yellow-hover);
+}
+
+.border-bottom-yellow-hover > li {
+  border-bottom: 0.1em solid transparent;
+}
+
+.border-bottom-yellow-hover > li:hover {
+  border-bottom: 0.1em solid var(--yellow-hover);
+}
+
+.border-bottom-dark > li {
+  border-bottom: 0.1em solid var(--dark);
+}
+
+.border-bottom-dark > li:hover {
+  border-bottom: 0.1em solid var(--dark-hover);
+}
+
+.border-bottom-dark-hover > li {
+  border-bottom: 0.1em solid transparent;
+}
+
+.border-bottom-dark-hover > li:hover {
+  border-bottom: 0.1em solid var(--dark-hover);
+}
+
+.border-bottom-grey > li {
+  border-bottom: 0.1em solid var(--grey);
+}
+
+.border-bottom-grey > li:hover {
+  border-bottom: 0.1em solid var(--grey-hover);
+}
+
+.border-bottom-grey-hover > li {
+  border-bottom: 0.1em solid transparent;
+}
+
+.border-bottom-grey-hover > li:hover {
+  border-bottom: 0.1em solid var(--grey-hover);
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 42rem) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
 }
 
 *, *::before, *::after {

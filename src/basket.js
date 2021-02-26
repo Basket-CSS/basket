@@ -8,8 +8,10 @@ window.addEventListener('load', (event) => {
     document.querySelectorAll('.navbar-collapse').forEach(el => {
         el.addEventListener('click', (ev) => {
             let targetElement = ev.target || ev.srcElement;
-            targetElement = targetElement.parentElement.querySelector('.navbar-items');
-            targetElement.classList.toggle('collapsed');
+            targetElement = targetElement.parentElement.querySelectorAll('.navbar-items');
+            targetElement.forEach(function (el) {
+                el.classList.toggle('collapsed');
+            })
         });
     });
 

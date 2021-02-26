@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/imgs/logo-hero.png" style="color: pink;" /></p>
+<p align="center"><img src="docs/imgs/logo-hero.png" style="color: pink;" width="500"/></p>
 
 > Yes, another CSS framework. <br />
 > Super minimalistic. <br />
