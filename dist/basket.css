@@ -186,6 +186,8 @@
 
 .btn-block {
   width: 100%;
+  display: block;
+  margin: 0.4em 0;
 }
 
 .btn-link {
@@ -1515,15 +1517,15 @@ h6 {
 }
 
 .text-italic {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 .text-bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .text-underline {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .text-muted {
