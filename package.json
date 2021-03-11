@@ -6,10 +6,10 @@
   "license": "MIT",
   "homepage": "https://getbasket.co",
   "repository": "blacksector/basket",
-  "main": "dist/basket.css",
+  "main": "dist/basket.min.css",
   "scripts": {
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 3 versions\" -r dist/*.css",
-    "banner": "banner-cli dist/*.css -n \"Basket\" && banner-cli dist/*.js -n \"Basket\"",
+    "banner": "banner-cli dist/basket.css -n \"Basket\" && banner-cli dist/basket.js -n \"Basket\"",
     "test": "echo \"No test specified\"",
     "build": "rimraf dist && run-s sass autoprefixer minifyjs banner",
     "sass": "node-sass --output-style expanded src/basket.sass dist/basket.css && node-sass --output-style compressed src/basket.sass dist/basket.min.css",
