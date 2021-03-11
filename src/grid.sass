@@ -24,13 +24,13 @@
   .col
     flex-wrap: wrap
     flex-direction: column
-    flex: 0 0 auto
+    flex: 1 1 auto
 
-@for $i from 1 through $columns
-  .col-#{$i}
-    flex: 0 0 100% / $columns * $i
-  .col-offset-#{$i}
-    margin-left: 100% / $columns * $i
+  @for $i from 1 through $columns
+    .col-#{$i}
+      flex: 0 0 100% / $columns * $i
+    .col-offset-#{$i}
+      margin-left: 100% / $columns * $i
 
 
 /*

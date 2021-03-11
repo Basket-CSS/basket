@@ -7,11 +7,7 @@ $blue-light: #007aff
 $green-light: #34c759
 $indigo-light: #5856d6
 $orange-light: #ff9500
-$pink-light: #ff2d55
-$purple-light: #af52dE
 $red-light: #ff3b30
-$teal-light: #5ac8fa
-$yellow-light: #ffcc00
 $hover-percent: 5%
 
 // Dark Color
@@ -22,17 +18,13 @@ $blue-dark: #0a84ff
 $green-dark: #30d158
 $indigo-dark: #5856d6
 $orange-dark: #ff9f0a
-$pink-dark: #ff375f
-$purple-dark: #bf5af2
 $red-dark: #ff453a
-$teal-dark: #64d2ff
-$yellow-dark: #ffd60a
 $hover-percent-dark: 5%
 
 // Other Colors
 $dark: #333333
 
-$variations: "blue", "green", "indigo", "orange", "pink", "purple", "red", "teal", "yellow", "dark", "grey"
+$variations: "blue", "green", "indigo", "orange", "red", "dark", "grey"
 
 \:root, [data-theme="light"]
   --bg-color: #{$bg-light}
@@ -47,16 +39,8 @@ $variations: "blue", "green", "indigo", "orange", "pink", "purple", "red", "teal
   --indigo-hover: #{darken($indigo-light, $hover-percent)}
   --orange: #{$orange-light}
   --orange-hover: #{darken($orange-light, $hover-percent)}
-  --pink: #{$pink-light}
-  --pink-hover: #{darken($pink-light, $hover-percent)}
-  --purple: #{$purple-light}
-  --purple-hover: #{darken($purple-light, $hover-percent)}
   --red: #{$red-light}
   --red-hover: #{darken($red-light, $hover-percent)}
-  --teal: #{$teal-light}
-  --teal-hover: #{darken($teal-light, $hover-percent)}
-  --yellow: #{$yellow-light}
-  --yellow-hover: #{darken($yellow-light, $hover-percent)}
   --dark: #{$dark}
   --dark-hover: #{darken($dark, $hover-percent)}
   --lightness-hsl: 90%
@@ -75,16 +59,8 @@ $variations: "blue", "green", "indigo", "orange", "pink", "purple", "red", "teal
   --indigo-hover: #{lighten($indigo-dark, $hover-percent-dark)}
   --orange: #{$orange-dark}
   --orange-hover: #{lighten($orange-dark, $hover-percent-dark)}
-  --pink: #{$pink-dark}
-  --pink-hover: #{lighten($pink-dark, $hover-percent-dark)}
-  --purple: #{$purple-dark}
-  --purple-hover: #{lighten($purple-dark, $hover-percent-dark)}
   --red: #{$red-dark}
   --red-hover: #{lighten($red-dark, $hover-percent-dark)}
-  --teal: #{$teal-dark}
-  --teal-hover: #{lighten($teal-dark, $hover-percent-dark)}
-  --yellow: #{$yellow-dark}
-  --yellow-hover: #{lighten($yellow-dark, $hover-percent-dark)}
   --dark: #{$dark}
   --dark-hover: #{lighten($dark, $hover-percent-dark)}
   --lightness-hsl: 20%
