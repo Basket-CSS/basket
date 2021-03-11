@@ -886,6 +886,21 @@ textarea[type=text] {
   margin-left: 100%;
 }
 
+/*
+ *   On mobile we just expand all of the containers to full width */
+@media (max-width: 42rem) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .row .col-* {
+    margin-bottom: inherit;
+    padding: 0 1.0rem;
+  }
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
