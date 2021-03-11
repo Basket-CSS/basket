@@ -166,6 +166,7 @@
 }
 
 .btn {
+  display: inline-block;
   padding: 1rem 1.5rem;
   color: #ffffff;
   cursor: pointer;
@@ -173,6 +174,7 @@
   border-radius: 5px;
   border-color: transparent;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .btn-rounded {
@@ -191,8 +193,17 @@
 }
 
 .btn-link {
-  background-color: transparent !important;
+  background: transparent !important;
   color: inherit;
+}
+
+.btn-light {
+  background: white;
+  color: var(--dark);
+}
+
+.btn-light:hover {
+  background: var(--grey);
 }
 
 .btn-blue {
