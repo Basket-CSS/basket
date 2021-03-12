@@ -14,8 +14,7 @@
     "build": "rimraf dist && run-s sass autoprefixer minifyjs banner",
     "sass": "node-sass --output-style expanded src/basket.sass dist/basket.css && node-sass --output-style compressed src/basket.sass dist/basket.min.css",
     "minifyjs": "copyfiles -u 1 src/*.js dist && uglifyjs dist/basket.js --compress --mangle --warn --output dist/basket.min.js",
-    "reinstall": "rimraf node_modules && npm cache clean && npm install",
-    "copy": "rimraf docs/dist && copyfiles -u 1 dist/* docs/dist"
+    "reinstall": "rimraf node_modules && npm cache clean && npm install"
   },
   "keywords": [
     "css",
