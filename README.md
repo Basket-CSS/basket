@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/imgs/logo-hero.png" style="color: pink;" width="500"/></p>
 
-
+[![](https://badgen.net/github/tag/Basket-CSS/basket)](https://github.com/Basket-CSS/basket/releases)
 [![](https://data.jsdelivr.com/v1/package/npm/getbasket/badge)](https://www.jsdelivr.com/package/npm/getbasket)
 [![Rate on Openbase](https://badges.openbase.com/js/rating/getbasket.svg)](https://openbase.com/js/getbasket?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
 

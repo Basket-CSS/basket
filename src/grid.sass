@@ -21,6 +21,9 @@
   width: 100%
   flex-wrap: wrap
 
+  .col-auto
+    flex: 0 0 auto
+
   .col
     flex-wrap: wrap
     flex-direction: column
@@ -31,18 +34,3 @@
       flex: 0 0 100% / $columns * $i
     .col-offset-#{$i}
       margin-left: 100% / $columns * $i
-
-
-/*
- *   On mobile we just expand all of the containers to full width */
-@media (max-width: 42.0rem)
-  .row
-    flex-direction: column
-
-    @for $i from 1 through $columns
-      .col-#{$i}
-        margin-bottom: inherit
-        padding: 0 1rem
-
-      .col-offset-#{$i}
-        margin-left: 0

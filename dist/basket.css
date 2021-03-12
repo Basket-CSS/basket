@@ -590,6 +590,12 @@ textarea[type=text] {
       flex-wrap: wrap;
 }
 
+.row .col-auto {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
 .row .col {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -720,101 +726,6 @@ textarea[type=text] {
 
 .row .col-offset-12 {
   margin-left: 100%;
-}
-
-/*
- *   On mobile we just expand all of the containers to full width */
-@media (max-width: 42rem) {
-  .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .row .col-1 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-1 {
-    margin-left: 0;
-  }
-  .row .col-2 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-2 {
-    margin-left: 0;
-  }
-  .row .col-3 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-3 {
-    margin-left: 0;
-  }
-  .row .col-4 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-4 {
-    margin-left: 0;
-  }
-  .row .col-5 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-5 {
-    margin-left: 0;
-  }
-  .row .col-6 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-6 {
-    margin-left: 0;
-  }
-  .row .col-7 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-7 {
-    margin-left: 0;
-  }
-  .row .col-8 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-8 {
-    margin-left: 0;
-  }
-  .row .col-9 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-9 {
-    margin-left: 0;
-  }
-  .row .col-10 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-10 {
-    margin-left: 0;
-  }
-  .row .col-11 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-11 {
-    margin-left: 0;
-  }
-  .row .col-12 {
-    margin-bottom: inherit;
-    padding: 0 1rem;
-  }
-  .row .col-offset-12 {
-    margin-left: 0;
-  }
 }
 
 .hero {
