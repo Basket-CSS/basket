@@ -39,6 +39,10 @@
   .row
     flex-direction: column
 
-    .col-*
-      margin-bottom: inherit
-      padding: 0 1.0rem
+    @for $i from 1 through $columns
+      .col-#{$i}
+        margin-bottom: inherit
+        padding: 0 1rem
+
+      .col-offset-#{$i}
+        margin-left: 0

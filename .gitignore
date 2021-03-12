@@ -5,4 +5,4 @@ node_modules
 *.log
 
 # development
-docs/dist
+docs
