@@ -12,12 +12,11 @@
     <link rel="stylesheet" href="dist/basket.min.css">
 
     <style>
-        #grid-sample>.row>* {
-            border: 1px solid var(--text-color);
-            padding: 1.5em;
-            background: var(--grey);
-            color: var( --text-color);
-            box-sizing: border-box;
+        #grid-sample>.row>div>div {
+            color: white;
+            padding: .5rem;
+            background: var(--blue);
+            border:0.5px solid var(--dark);
         }
         .switch {
             position: relative;
@@ -307,35 +306,35 @@
 
     <div id="grid-sample" class="container">
         <div class="row">
-            <div class="col-12">12</div>
+            <div class="col-12"><div>12</div></div>
         </div>
         <div class="row">
-            <div class="col-11">11</div>
-            <div class="col-1">1</div>
+            <div class="col-11"><div>11</div></div>
+            <div class="col-1"><div>1</div></div>
         </div>
         <div class="row">
-            <div class="col-10">10</div>
-            <div class="col-2">2</div>
+            <div class="col-10"><div>10</div></div>
+            <div class="col-2"><div>2</div></div>
         </div>
         <div class="row">
-            <div class="col-9">9</div>
-            <div class="col-3">3</div>
+            <div class="col-9"><div>9</div></div>
+            <div class="col-3"><div>3</div></div>
         </div>
         <div class="row">
-            <div class="col-8">8</div>
-            <div class="col-4">4</div>
+            <div class="col-8"><div>8</div></div>
+            <div class="col-4"><div>4</div></div>
         </div>
         <div class="row">
-            <div class="col-7">7</div>
-            <div class="col-5">5</div>
+            <div class="col-7"><div>7</div></div>
+            <div class="col-5"><div>5</div></div>
         </div>
         <div class="row">
-            <div class="col-6">6</div>
-            <div class="col-6">6</div>
+            <div class="col-6"><div>6</div></div>
+            <div class="col-6"><div>6</div></div>
         </div>
         <div class="row">
-            <div class="col">Auto</div>
-            <div class="col">Auto</div>
+            <div class="col"><div>col</div></div>
+            <div class="col col-auto"><div>col-auto</div></div>
         </div>
     </div>
 

@@ -6,7 +6,7 @@
   "license": "MIT",
   "homepage": "https://getbasket.co",
   "repository": "blacksector/basket",
-  "main": "dist/basket.min.css",
+  "main": "dist/basket.css",
   "scripts": {
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 3 versions\" -r dist/*.css",
     "banner": "banner-cli dist/basket.css -n \"Basket\" && banner-cli dist/basket.js -n \"Basket\"",
