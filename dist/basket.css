@@ -1,5 +1,5 @@
 /*!
-  * Basket v1.0.0
+  * Basket v1.1.0
   * https://getbasket.co
   *
   * Copyright (c) 2021 Omar Quazi
@@ -612,6 +612,7 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 8.33333%;
           flex: 0 0 8.33333%;
+  max-width: 8.33333%;
 }
 
 .row .col-offset-1 {
@@ -622,6 +623,7 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 16.66667%;
           flex: 0 0 16.66667%;
+  max-width: 16.66667%;
 }
 
 .row .col-offset-2 {
@@ -632,6 +634,7 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
+  max-width: 25%;
 }
 
 .row .col-offset-3 {
@@ -642,6 +645,7 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.33333%;
           flex: 0 0 33.33333%;
+  max-width: 33.33333%;
 }
 
 .row .col-offset-4 {
@@ -652,6 +656,7 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 41.66667%;
           flex: 0 0 41.66667%;
+  max-width: 41.66667%;
 }
 
 .row .col-offset-5 {
@@ -662,6 +667,7 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .row .col-offset-6 {
@@ -672,6 +678,7 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 58.33333%;
           flex: 0 0 58.33333%;
+  max-width: 58.33333%;
 }
 
 .row .col-offset-7 {
@@ -682,6 +689,7 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 66.66667%;
           flex: 0 0 66.66667%;
+  max-width: 66.66667%;
 }
 
 .row .col-offset-8 {
@@ -692,6 +700,7 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 75%;
           flex: 0 0 75%;
+  max-width: 75%;
 }
 
 .row .col-offset-9 {
@@ -702,6 +711,7 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 83.33333%;
           flex: 0 0 83.33333%;
+  max-width: 83.33333%;
 }
 
 .row .col-offset-10 {
@@ -712,6 +722,7 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 91.66667%;
           flex: 0 0 91.66667%;
+  max-width: 91.66667%;
 }
 
 .row .col-offset-11 {
@@ -722,10 +733,20 @@ textarea[type=text] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .row .col-offset-12 {
   margin-left: 100%;
+}
+
+@media (max-width: 42rem) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .hero {

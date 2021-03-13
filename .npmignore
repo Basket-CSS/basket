@@ -1,6 +1,0 @@
-.gitignore
-.npmignore
-package-lock.json
-package.json
-docs/dist
-docs/*.html

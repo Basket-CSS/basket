@@ -32,5 +32,13 @@
   @for $i from 1 through $columns
     .col-#{$i}
       flex: 0 0 100% / $columns * $i
+      max-width: 100% / $columns * $i
     .col-offset-#{$i}
       margin-left: 100% / $columns * $i
+
+
+@media (max-width: 42.0rem)
+  .row
+    flex-direction: column
+
+    
