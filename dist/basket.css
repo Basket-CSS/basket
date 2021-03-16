@@ -276,6 +276,7 @@ code {
 pre {
   background: hsl(0, 0%, var(--lightness-hsl));
   overflow-y: hidden;
+  overflow-y-white-space: pre-line;
 }
 
 pre .pre-blue {
@@ -590,12 +591,6 @@ textarea[type=text] {
       flex-wrap: wrap;
 }
 
-.row .col-auto {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-}
-
 .row .col {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -606,137 +601,148 @@ textarea[type=text] {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  padding: 0 1rem;
 }
 
-.row .col-1 {
+.row .col.col-no-padding {
+  padding: 0;
+}
+
+.row .col.col-auto {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.row .col.col-1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 8.33333%;
           flex: 0 0 8.33333%;
   max-width: 8.33333%;
 }
 
-.row .col-offset-1 {
+.row .col.col-offset-1 {
   margin-left: 8.33333%;
 }
 
-.row .col-2 {
+.row .col.col-2 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 16.66667%;
           flex: 0 0 16.66667%;
   max-width: 16.66667%;
 }
 
-.row .col-offset-2 {
+.row .col.col-offset-2 {
   margin-left: 16.66667%;
 }
 
-.row .col-3 {
+.row .col.col-3 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
   max-width: 25%;
 }
 
-.row .col-offset-3 {
+.row .col.col-offset-3 {
   margin-left: 25%;
 }
 
-.row .col-4 {
+.row .col.col-4 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.33333%;
           flex: 0 0 33.33333%;
   max-width: 33.33333%;
 }
 
-.row .col-offset-4 {
+.row .col.col-offset-4 {
   margin-left: 33.33333%;
 }
 
-.row .col-5 {
+.row .col.col-5 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 41.66667%;
           flex: 0 0 41.66667%;
   max-width: 41.66667%;
 }
 
-.row .col-offset-5 {
+.row .col.col-offset-5 {
   margin-left: 41.66667%;
 }
 
-.row .col-6 {
+.row .col.col-6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   max-width: 50%;
 }
 
-.row .col-offset-6 {
+.row .col.col-offset-6 {
   margin-left: 50%;
 }
 
-.row .col-7 {
+.row .col.col-7 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 58.33333%;
           flex: 0 0 58.33333%;
   max-width: 58.33333%;
 }
 
-.row .col-offset-7 {
+.row .col.col-offset-7 {
   margin-left: 58.33333%;
 }
 
-.row .col-8 {
+.row .col.col-8 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 66.66667%;
           flex: 0 0 66.66667%;
   max-width: 66.66667%;
 }
 
-.row .col-offset-8 {
+.row .col.col-offset-8 {
   margin-left: 66.66667%;
 }
 
-.row .col-9 {
+.row .col.col-9 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 75%;
           flex: 0 0 75%;
   max-width: 75%;
 }
 
-.row .col-offset-9 {
+.row .col.col-offset-9 {
   margin-left: 75%;
 }
 
-.row .col-10 {
+.row .col.col-10 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 83.33333%;
           flex: 0 0 83.33333%;
   max-width: 83.33333%;
 }
 
-.row .col-offset-10 {
+.row .col.col-offset-10 {
   margin-left: 83.33333%;
 }
 
-.row .col-11 {
+.row .col.col-11 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 91.66667%;
           flex: 0 0 91.66667%;
   max-width: 91.66667%;
 }
 
-.row .col-offset-11 {
+.row .col.col-offset-11 {
   margin-left: 91.66667%;
 }
 
-.row .col-12 {
+.row .col.col-12 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   max-width: 100%;
 }
 
-.row .col-offset-12 {
+.row .col.col-offset-12 {
   margin-left: 100%;
 }
 
@@ -746,6 +752,9 @@ textarea[type=text] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .row .col-expand {
+    max-width: 100%;
   }
 }
 

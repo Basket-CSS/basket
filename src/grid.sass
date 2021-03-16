@@ -21,24 +21,31 @@
   width: 100%
   flex-wrap: wrap
 
-  .col-auto
-    flex: 0 0 auto
-
   .col
     flex-wrap: wrap
     flex-direction: column
     flex: 1 1 auto
+    padding: 0 1rem
 
-  @for $i from 1 through $columns
-    .col-#{$i}
-      flex: 0 0 100% / $columns * $i
-      max-width: 100% / $columns * $i
-    .col-offset-#{$i}
-      margin-left: 100% / $columns * $i
+    &.col-no-padding
+      padding: 0
+
+    &.col-auto
+      flex: 0 0 auto
+
+    @for $i from 1 through $columns
+      &.col-#{$i}
+        flex: 0 0 100% / $columns * $i
+        max-width: 100% / $columns * $i
+
+      &.col-offset-#{$i}
+        margin-left: 100% / $columns * $i
 
 
 @media (max-width: 42.0rem)
   .row
     flex-direction: column
+    .col-expand
+      max-width: 100%
 
     
