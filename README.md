@@ -12,16 +12,9 @@
 
 ## Usage
 
-```html
-<!-- Normalize isn't required but nice to have -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-
-<!-- Basket CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/getbasket@1.1.1/dist/basket.min.css" integrity="sha256-diZpcL3ZwrWdOSgIkTd9Lk7xorxHS4mT0I1UEfFi9a0=" crossorigin="anonymous">
-
-<!-- JS is required for navigation collapse to work and auto dark mode-->
-<script src="https://cdn.jsdelivr.net/npm/getbasket@1.1.1/dist/basket.min.js" integrity="sha256-komGclTLfPHDdN9BSMYuIajfQfyIHcEteQzTJWkJfKU=" crossorigin="anonymous"></script>
-```
+- [Documentation](https://getbasket.co/docs/)
+- [Installation](https://getbasket.co/docs/getting-started/install/)
+- [Usage / Starter](https://getbasket.co/docs/getting-started/usage/)
 
 ## Implementation
 
