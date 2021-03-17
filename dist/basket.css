@@ -754,7 +754,7 @@ textarea[type=text] {
             flex-direction: column;
   }
   .row .col-expand {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
 
