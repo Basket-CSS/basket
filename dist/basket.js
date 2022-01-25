@@ -2,7 +2,7 @@
   * Basket v1.1.3
   * https://getbasket.co
   *
-  * Copyright (c) 2021 Omar Quazi
+  * Copyright (c) 2022 Omar Quazi
   * Licensed under the MIT license
  */
 

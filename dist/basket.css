@@ -2,7 +2,7 @@
   * Basket v1.1.3
   * https://getbasket.co
   *
-  * Copyright (c) 2021 Omar Quazi
+  * Copyright (c) 2022 Omar Quazi
   * Licensed under the MIT license
  */
 
@@ -243,13 +243,13 @@ button:disabled:hover {
 .card {
   width: 100%;
   margin: auto auto;
-  text-align: center;
-  border: 0.5rem var(--hover-color);
+  border: 0.1rem solid hsl(0, 0%, var(--lightness-hsl));
 }
 
 .card .card-body {
   padding: 4rem 2rem;
-  background: white;
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 .card .card-body img {
@@ -257,11 +257,11 @@ button:disabled:hover {
 }
 
 .card-hover:hover {
-  -webkit-box-shadow: 0px 0px 10px 0px var(--hover-color);
-          box-shadow: 0px 0px 10px 0px var(--hover-color);
-  -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-          transform: translateY(-2px);
+  -webkit-box-shadow: 0 4px 8px 0 hsl(0, 0%, var(--lightness-hsl));
+          box-shadow: 0 4px 8px 0 hsl(0, 0%, var(--lightness-hsl));
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 code {
