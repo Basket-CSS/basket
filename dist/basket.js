@@ -1,5 +1,5 @@
 /*!
-  * Basket v1.1.3
+  * Basket v1.1.4
   * https://getbasket.co
   *
   * Copyright (c) 2022 Omar Quazi

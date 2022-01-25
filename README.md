@@ -24,7 +24,7 @@ Things that are implemented fully so far:
 - [ ] Badge - ?
 - [x] Blockquotes
 - [x] Buttons
-- [ ] Cards - ?
+- [x] Cards
 - [ ] Dropdowns - ?
 - [ ] Lists
 - [x] Forms
